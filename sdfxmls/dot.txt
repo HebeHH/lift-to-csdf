@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="csdf" version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-csdf.xsd">
+<applicationGraph name='autogen'>
+    <csdf name='autogen' type='autogen'>
+    <actor name='n1' type='Param' >
+<port type='in' name='n1_in' rate='1'/>
+<port type='out' name='n1_x0_out' rate='1'/>
+</actor>
+<actor name='n4' type='UserFun'  label='abs'>
+<port type='out' name='n4_out' rate='1'/>
+<port type='in' name='n4_x0_in' rate='1'/>
+</actor>
+<actor name='n5XDA' type='Dearray' >
+<port type='in' name='n5_in' rate='1'/>
+<port type='out' name='n5XDA_out' rate='10'/>
+</actor>
+<actor name='n2' type='add'>
+<port type='out' name='n2_out' rate='1'/>
+<port type='in' name='n2_x0_in' rate='1'/>
+<port type='in' name='n2_x1_in' rate='1'/>
+</actor>
+<actor name='n3XRA' type='Rearray' >
+<port type='in' name='n3XRA_in' rate='1'/>
+<port type='out' name='n3_out' rate='1'/>
+</actor>
+<actor name='n3XPARA' type='Param' >
+<port type='in' name='n3XPARA_in' rate='1,1,1,1,1,1,1,1,1,1'/>
+<port type='out' name='n3XPARA_x0_out' rate='1,1,1,1,1,1,1,1,1,1'/>
+<port type='out' name='n3XPARA_x1_out' rate='0,0,0,0,0,0,0,0,0,1'/>
+</actor><channel name='n1_x0_out_to_n5_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n5XDA' dstPort='n5_in' size='1' initialTokens='0'/>
+<channel name='n5XDA_out_to_n4_x0_in' srcActor='n5XDA' srcPort='n5XDA_out' dstActor='n4' dstPort='n4_x0_in' size='1' initialTokens='0'/>
+<channel name='n3XPARA_x0_out_to_n2_x1_in' srcActor='n3XPARA' srcPort='n3XPARA_x0_out' dstActor='n2' dstPort='n2_x1_in' size='1' initialTokens='1'/>
+<channel name='n2_out_to_n3XPARA_in' srcActor='n2' srcPort='n2_out' dstActor='n3XPARA' dstPort='n3XPARA_in' size='1' initialTokens='0'/>
+<channel name='n3XPARA_x1_out_to_n3XRA_in' srcActor='n3XPARA' srcPort='n3XPARA_x1_out' dstActor='n3XRA' dstPort='n3XRA_in' size='1' initialTokens='0'/>
+<channel name='n4_out_to_n2_x0_in' srcActor='n4' srcPort='n4_out' dstActor='n2' dstPort='n2_x0_in' size='1' initialTokens='0'/>
+    </csdf>
+
+    <csdfProperties>
+    <actorProperties actor='n1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5XDA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='3'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='4'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='3'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3XPARA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1,1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+    </csdfProperties>
+
+</applicationGraph>
+
+</sdf3>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="csdf" version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-csdf.xsd">
+<applicationGraph name='autogen'>
+    <csdf name='autogen' type='autogen'>
+    <actor name='n1' type='Param' >
+<port type='in' name='n1_in' rate='1'/>
+<port type='out' name='n1_x0_out' rate='1'/>
+</actor>
+<actor name='n2' type='Param' >
+<port type='in' name='n2_in' rate='1'/>
+<port type='out' name='n2_x0_out' rate='1'/>
+</actor>
+<actor name='n3' type='Param' >
+<port type='in' name='n3_in' rate='1'/>
+<port type='out' name='n3_x0_out' rate='1'/>
+</actor>
+<actor name='n4' type='mult'>
+<port type='out' name='n4_out' rate='1'/>
+<port type='in' name='n4_x0_in' rate='1'/>
+<port type='in' name='n4_x1_in' rate='1'/>
+</actor>
+<actor name='n5XDA' type='Dearray' >
+<port type='in' name='n5_in' rate='1'/>
+<port type='out' name='n5XDA_out' rate='10'/>
+</actor>
+<actor name='n5XRA' type='Rearray' >
+<port type='in' name='n5XRA_in' rate='10'/>
+<port type='out' name='n5_out' rate='1'/>
+</actor><channel name='n1_x0_out_to_n5_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n5XDA' dstPort='n5_in' size='1' initialTokens='0'/>
+<channel name='n3_x0_out_to_n4_x0_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n4' dstPort='n4_x0_in' size='1' initialTokens='0'/>
+<channel name='n2_x0_out_to_n4_x1_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n4' dstPort='n4_x1_in' size='1' initialTokens='0'/>
+<channel name='n5XDA_out_to_n3_in' srcActor='n5XDA' srcPort='n5XDA_out' dstActor='n3' dstPort='n3_in' size='1' initialTokens='0'/>
+<channel name='n4_out_to_n5XRA_in' srcActor='n4' srcPort='n4_out' dstActor='n5XRA' dstPort='n5XRA_in' size='1' initialTokens='0'/>
+    </csdf>
+
+    <csdfProperties>
+    <actorProperties actor='n1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='4'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5XDA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='3'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='3'/>
+        </processor>
+    </actorProperties>
+    
+    </csdfProperties>
+
+</applicationGraph>
+
+</sdf3>
+

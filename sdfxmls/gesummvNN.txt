@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="csdf" version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-csdf.xsd">
+<applicationGraph name='autogen'>
+    <csdf name='autogen' type='autogen'>
+    <actor name='n1' type='Param' >
+<port type='in' name='n1_in' rate='1'/>
+<port type='out' name='n1_x0_out' rate='1'/>
+</actor>
+<actor name='n2' type='Param' >
+<port type='in' name='n2_in' rate='1'/>
+<port type='out' name='n2_x0_out' rate='1'/>
+</actor>
+<actor name='n3' type='Param' >
+<port type='in' name='n3_in' rate='1'/>
+<port type='out' name='n3_x0_out' rate='1'/>
+<port type='out' name='n3_x1_out' rate='1'/>
+</actor>
+<actor name='n4' type='Param' >
+<port type='in' name='n4_in' rate='1'/>
+<port type='out' name='n4_x0_out' rate='1'/>
+</actor>
+<actor name='n5' type='Param' >
+<port type='in' name='n5_in' rate='1'/>
+<port type='out' name='n5_x0_out' rate='1'/>
+</actor>
+<actor name='n7' type='UserFun'  label='mvAlpha'>
+<port type='out' name='n7_out' rate='1'/>
+<port type='in' name='n7_x0_in' rate='1'/>
+<port type='in' name='n7_x1_in' rate='1'/>
+<port type='in' name='n7_x2_in' rate='1'/>
+</actor>
+<actor name='n8' type='UserFun'  label='mvAlpha'>
+<port type='out' name='n8_out' rate='1'/>
+<port type='in' name='n8_x0_in' rate='1'/>
+<port type='in' name='n8_x1_in' rate='1'/>
+<port type='in' name='n8_x2_in' rate='1'/>
+</actor>
+<actor name='n6' type='UserFun'  label='vecAdd'>
+<port type='out' name='n6_out' rate='1'/>
+<port type='in' name='n6_x0_in' rate='1'/>
+<port type='in' name='n6_x1_in' rate='1'/>
+</actor><channel name='n1_x0_out_to_n7_x0_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n7' dstPort='n7_x0_in' size='1' initialTokens='0'/>
+<channel name='n3_x0_out_to_n7_x1_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n7' dstPort='n7_x1_in' size='1' initialTokens='0'/>
+<channel name='n4_x0_out_to_n7_x2_in' srcActor='n4' srcPort='n4_x0_out' dstActor='n7' dstPort='n7_x2_in' size='1' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in' srcActor='n7' srcPort='n7_out' dstActor='n6' dstPort='n6_x0_in' size='1' initialTokens='0'/>
+<channel name='n2_x0_out_to_n8_x0_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n8' dstPort='n8_x0_in' size='1' initialTokens='0'/>
+<channel name='n3_x1_out_to_n8_x1_in' srcActor='n3' srcPort='n3_x1_out' dstActor='n8' dstPort='n8_x1_in' size='1' initialTokens='0'/>
+<channel name='n5_x0_out_to_n8_x2_in' srcActor='n5' srcPort='n5_x0_out' dstActor='n8' dstPort='n8_x2_in' size='1' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in' srcActor='n8' srcPort='n8_out' dstActor='n6' dstPort='n6_x1_in' size='1' initialTokens='0'/>
+    </csdf>
+
+    <csdfProperties>
+    <actorProperties actor='n1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+    </csdfProperties>
+
+</applicationGraph>
+
+</sdf3>
+

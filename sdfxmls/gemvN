@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="csdf" version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-csdf.xsd">
+    <applicationGraph name='autogen'>
+        <csdf name='autogen' type='autogen'>
+            <actor name='n1' type='Param'>
+                <port type='in' name='n1_in' rate='1' />
+                <port type='out' name='n1_x0_out' rate='1' />
+            </actor>
+            <actor name='n2' type='Param'>
+                <port type='in' name='n2_in' rate='1' />
+                <port type='out' name='n2_x0_out' rate='1' />
+            </actor>
+            <actor name='n3' type='Param'>
+                <port type='in' name='n3_in' rate='1' />
+                <port type='out' name='n3_x0_out' rate='1' />
+            </actor>
+            <actor name='n4' type='Param'>
+                <port type='in' name='n4_in' rate='1' />
+                <port type='out' name='n4_x0_out' rate='1' />
+            </actor>
+            <actor name='n5' type='Param'>
+                <port type='in' name='n5_in' rate='1' />
+                <port type='out' name='n5_x0_out' rate='1' />
+            </actor>
+            <actor name='n23' type='Zip'>
+                <port type='out' name='n23_out' rate='1' />
+                <port type='in' name='n23_x0_in' rate='1' />
+                <port type='in' name='n23_x1_in' rate='1' />
+            </actor>
+            <actor name='n6' type='Param'>
+                <port type='in' name='n6_in' rate='1' />
+                <port type='out' name='n6_x0_out' rate='1' />
+                <port type='out' name='n6_x1_out' rate='1' />
+            </actor>
+            <actor name='n21' type='Get'>
+                <port type='in' name='n21_in' rate='1' />
+                <port type='out' name='n21_out' rate='1' />
+            </actor>
+            <actor name='n20' type='Zip'>
+                <port type='out' name='n20_out' rate='1' />
+                <port type='in' name='n20_x0_in' rate='1' />
+                <port type='in' name='n20_x1_in' rate='1' />
+            </actor>
+            <actor name='n7' type='Param'>
+                <port type='in' name='n7_in' rate='1' />
+                <port type='out' name='n7_x0_out' rate='1' />
+            </actor>
+            <actor name='n9' type='Mult'>
+                <port type='out' name='n9_out' rate='1' />
+                <port type='in' name='n9_x0_in' rate='1' />
+                <port type='in' name='n9_x1_in' rate='1' />
+            </actor>
+            <actor name='n11' type='Get'>
+                <port type='in' name='n11_in' rate='1' />
+                <port type='out' name='n11_out' rate='1' />
+            </actor>
+            <actor name='n10' type='Mult'>
+                <port type='out' name='n10_out' rate='1' />
+                <port type='in' name='n10_x0_in' rate='1' />
+                <port type='in' name='n10_x1_in' rate='1' />
+            </actor>
+            <actor name='n8' type='Add'>
+                <port type='out' name='n8_out' rate='1' />
+                <port type='in' name='n8_x0_in' rate='1' />
+                <port type='in' name='n8_x1_in' rate='1' />
+            </actor>
+            <actor name='n12XRA' type='Rearray'>
+                <port type='in' name='n12XRA_in' rate='10' />
+                <port type='out' name='n12_out' rate='1' />
+            </actor>
+            <actor name='n15' type='Param'>
+                <port type='in' name='n15_in' rate='1' />
+                <port type='out' name='n15_x0_out' rate='1' />
+                <port type='out' name='n15_x1_out' rate='1' />
+            </actor>
+            <actor name='n17' type='Get'>
+                <port type='in' name='n17_in' rate='1' />
+                <port type='out' name='n17_out' rate='1' />
+            </actor>
+            <actor name='n18' type='Get'>
+                <port type='in' name='n18_in' rate='1' />
+                <port type='out' name='n18_out' rate='1' />
+            </actor>
+            <actor name='n16' type='Mult'>
+                <port type='out' name='n16_out' rate='1' />
+                <port type='in' name='n16_x0_in' rate='1' />
+                <port type='in' name='n16_x1_in' rate='1' />
+            </actor>
+            <actor name='n19XDA' type='Dearray'>
+                <port type='in' name='n19_in' rate='1' />
+                <port type='out' name='n19XDA_out' rate='10' />
+            </actor>
+            <actor name='n13' type='UserFun' name='add'>
+                <port type='out' name='n13_out' rate='1' />
+                <port type='in' name='n13_x0_in' rate='1' />
+                <port type='in' name='n13_x1_in' rate='1' />
+            </actor>
+            <actor name='n14XPARA' type='Param'>
+                <port type='in' name='n14XPARA_in' rate='1,1,1,1,1,1,1,1,1,1' />
+                <port type='out' name='n14XPARA_x0_out' rate='1,1,1,1,1,1,1,1,1,1' />
+                <port type='out' name='n14XPARA_x1_out' rate='0,0,0,0,0,0,0,0,0,1' />
+            </actor>
+            <actor name='n22XDA' type='Dearray'>
+                <port type='in' name='n22_in' rate='1' />
+                <port type='out' name='n22XDA_out' rate='10' />
+            </actor>
+            <actor name='n22XRA' type='Rearray'>
+                <port type='in' name='n22XRA_in' rate='10' />
+                <port type='out' name='n22_out' rate='1' />
+            </actor>
+            <channel name='n1_x0_out_to_n23_x0_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n23' dstPort='n23_x0_in' size='1' initialTokens='0' />
+            <channel name='n3_x0_out_to_n23_x1_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n23' dstPort='n23_x1_in' size='1' initialTokens='0' />
+            <channel name='n23_out_to_n22_in' srcActor='n23' srcPort='n23_out' dstActor='n22XDA' dstPort='n22_in' size='1' initialTokens='0' />
+            <channel name='n2_x0_out_to_n20_x0_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n20' dstPort='n20_x0_in' size='1' initialTokens='0' />
+            <channel name='n6_x1_out_to_n21_in' srcActor='n6' srcPort='n6_x1_out' dstActor='n21' dstPort='n21_in' size='1' initialTokens='0' />
+            <channel name='n21_out_to_n20_x1_in' srcActor='n21' srcPort='n21_out' dstActor='n20' dstPort='n20_x1_in' size='1' initialTokens='0' />
+            <channel name='n20_out_to_n19_in' srcActor='n20' srcPort='n20_out' dstActor='n19XDA' dstPort='n19_in' size='1' initialTokens='0' />
+            <channel name='n7_x0_out_to_n9_x0_in' srcActor='n7' srcPort='n7_x0_out' dstActor='n9' dstPort='n9_x0_in' size='1' initialTokens='0' />
+            <channel name='n4_x0_out_to_n9_x1_in' srcActor='n4' srcPort='n4_x0_out' dstActor='n9' dstPort='n9_x1_in' size='1' initialTokens='0' />
+            <channel name='n9_out_to_n8_x0_in' srcActor='n9' srcPort='n9_out' dstActor='n8' dstPort='n8_x0_in' size='1' initialTokens='0' />
+            <channel name='n6_x0_out_to_n11_in' srcActor='n6' srcPort='n6_x0_out' dstActor='n11' dstPort='n11_in' size='1' initialTokens='0' />
+            <channel name='n11_out_to_n10_x0_in' srcActor='n11' srcPort='n11_out' dstActor='n10' dstPort='n10_x0_in' size='1' initialTokens='0' />
+            <channel name='n5_x0_out_to_n10_x1_in' srcActor='n5' srcPort='n5_x0_out' dstActor='n10' dstPort='n10_x1_in' size='1' initialTokens='0' />
+            <channel name='n10_out_to_n8_x1_in' srcActor='n10' srcPort='n10_out' dstActor='n8' dstPort='n8_x1_in' size='1' initialTokens='0' />
+            <channel name='n8_out_to_n12XRA_in' srcActor='n8' srcPort='n8_out' dstActor='n12XRA' dstPort='n12XRA_in' size='1' initialTokens='0' />
+            <channel name='n15_x0_out_to_n17_in' srcActor='n15' srcPort='n15_x0_out' dstActor='n17' dstPort='n17_in' size='1' initialTokens='0' />
+            <channel name='n17_out_to_n16_x0_in' srcActor='n17' srcPort='n17_out' dstActor='n16' dstPort='n16_x0_in' size='1' initialTokens='0' />
+            <channel name='n15_x1_out_to_n18_in' srcActor='n15' srcPort='n15_x1_out' dstActor='n18' dstPort='n18_in' size='1' initialTokens='0' />
+            <channel name='n18_out_to_n16_x1_in' srcActor='n18' srcPort='n18_out' dstActor='n16' dstPort='n16_x1_in' size='1' initialTokens='0' />
+            <channel name='n19XDA_out_to_n15_in' srcActor='n19XDA' srcPort='n19XDA_out' dstActor='n15' dstPort='n15_in' size='1' initialTokens='0' />
+            <channel name='n14XPARA_x0_out_to_n13_x1_in' srcActor='n14XPARA' srcPort='n14XPARA_x0_out' dstActor='n13' dstPort='n13_x1_in' size='1' initialTokens='1' />
+            <channel name='n13_out_to_n14XPARA_in' srcActor='n13' srcPort='n13_out' dstActor='n14XPARA' dstPort='n14XPARA_in' size='1' initialTokens='0' />
+            <channel name='n22XDA_out_to_n6_in' srcActor='n22XDA' srcPort='n22XDA_out' dstActor='n6' dstPort='n6_in' size='1' initialTokens='0' />
+            <channel name='n12_out_to_n22XRA_in' srcActor='n12XRA' srcPort='n12_out' dstActor='n22XRA' dstPort='n22XRA_in' size='1' initialTokens='0' />
+            <channel name='n14XPARA_x1_out_to_n7_in' srcActor='n14XPARA' srcPort='n14XPARA_x1_out' dstActor='n7' dstPort='n7_in' size='1' initialTokens='0' />
+            <channel name='n16_out_to_n13_x0_in' srcActor='n16' srcPort='n16_out' dstActor='n13' dstPort='n13_x0_in' size='1' initialTokens='0' />
+        </csdf>
+        <csdfProperties>
+            <actorProperties actor='n1'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n2'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n3'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n4'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n5'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n23'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n6'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n21'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n20'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n7'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n9'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n11'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n10'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n8'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n12XRA'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n15'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n17'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n18'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n16'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n19XDA'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n13'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n14XPARA'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1,1,1,1,1,1,1,1,1,1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n22XDA'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+            <actorProperties actor='n22XRA'>
+                <processor type='cluster_0' default='true'>
+                    <executionTime time='1' />
+                </processor>
+            </actorProperties>
+        </csdfProperties>
+    </applicationGraph>
+</sdf3>
