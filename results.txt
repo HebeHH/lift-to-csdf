@@ -1,0 +1,111 @@
+mmnn/mmnn_10.xml
+Maximum throughput is 2.000000000e-04
+Maximum period     is 5000.000000
+mmnn/mmnn_105.xml
+Maximum throughput is 1.727675197e-07
+Maximum period     is 5788125.000000
+mmnn/mmnn_15.xml
+Maximum throughput is 5.925925926e-05
+Maximum period     is 16875.000000
+mmnn/mmnn_155.xml
+Maximum throughput is 5.370749555e-08
+Maximum period     is 18619375.000000
+mmnn/mmnn_20.xml
+Maximum throughput is 2.500000000e-05
+Maximum period     is 40000.000000
+mmnn/mmnn_205.xml
+Maximum throughput is 2.321498527e-08
+Maximum period     is 43075625.000000
+mmnn/mmnn_25.xml
+Maximum throughput is 1.280000000e-05
+Maximum period     is 78125.000000
+mmnn/mmnn_255.xml
+Maximum throughput is 1.206172588e-08
+Maximum period     is 82906875.000000
+mmnn/mmnn_30.xml
+Maximum throughput is 7.407407407e-06
+Maximum period     is 135000.000000
+mmnn/mmnn_305.xml
+Maximum throughput is 7.049048158e-09
+Maximum period     is 141863125.000000
+mmnn/mmnn_35.xml
+Maximum throughput is 4.664723032e-06
+Maximum period     is 214375.000000
+mmnn/mmnn_355.xml
+Maximum throughput is 4.470385096e-09
+Maximum period     is 223694375.000000
+mmnn/mmnn_40.xml
+Maximum throughput is 3.125000000e-06
+Maximum period     is 320000.000000
+mmnn/mmnn_405.xml
+Maximum throughput is 3.010682277e-09
+Maximum period     is 332150625.000000
+mmnn/mmnn_45.xml
+Maximum throughput is 2.194787380e-06
+Maximum period     is 455625.000000
+mmnn/mmnn_455.xml
+Maximum throughput is 2.123223956e-09
+Maximum period     is 470981875.000000
+mmnn/mmnn_5.xml
+Maximum throughput is 1.600000000e-03
+Maximum period     is  625.000000
+mmnn/mmnn_50.xml
+Maximum throughput is 1.600000000e-06
+Maximum period     is 625000.000000
+mmnn/mmnn_505.xml
+Maximum throughput is 1.552944237e-09
+Maximum period     is 643938125.000000
+mmnn/mmnn_55.xml
+Maximum throughput is 1.202103681e-06
+Maximum period     is 831875.000000
+mmnn/mmnn_555.xml
+Maximum throughput is 1.169906210e-09
+Maximum period     is 854769375.000000
+mmnn/mmnn_60.xml
+Maximum throughput is 9.259259259e-07
+Maximum period     is 1080000.000000
+mmnn/mmnn_605.xml
+Maximum throughput is 9.031582881e-10
+Maximum period     is 1107225625.000000
+mmnn/mmnn_65.xml
+Maximum throughput is 7.282658170e-07
+Maximum period     is 1373125.000000
+mmnn/mmnn_655.xml
+Maximum throughput is 7.117149617e-10
+Maximum period     is 1405056875.000000
+mmnn/mmnn_70.xml
+Maximum throughput is 5.830903790e-07
+Maximum period     is 1715000.000000
+mmnn/mmnn_705.xml
+Maximum throughput is 5.707719798e-10
+Maximum period     is 1752013125.000000
+mmnn/mmnn_75.xml
+Maximum throughput is 4.740740741e-07
+Maximum period     is 2109375.000000
+mmnn/mmnn_755.xml
+Maximum throughput is 4.647176216e-10
+Maximum period     is 2151844375.000000
+mmnn/mmnn_80.xml
+Maximum throughput is 3.906250000e-07
+Maximum period     is 2560000.000000
+mmnn/mmnn_805.xml
+Maximum throughput is 3.833913892e-10
+Maximum period     is 2608300625.000000
+mmnn/mmnn_85.xml
+Maximum throughput is 3.256665988e-07
+Maximum period     is 3070625.000000
+mmnn/mmnn_855.xml
+Maximum throughput is 3.199864966e-10
+Maximum period     is 3125131875.000000
+mmnn/mmnn_90.xml
+Maximum throughput is 2.743484225e-07
+Maximum period     is 3645000.000000
+mmnn/mmnn_905.xml
+Maximum throughput is 2.698262875e-10
+Maximum period     is 3706088125.000000
+mmnn/mmnn_95.xml
+Maximum throughput is 2.332701560e-07
+Maximum period     is 4286875.000000
+mmnn/mmnn_955.xml
+Maximum throughput is 2.296253762e-10
+Maximum period     is 4354919375.000000

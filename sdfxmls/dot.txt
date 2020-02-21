@@ -29,12 +29,12 @@
 <port type='in' name='n3XPARA_in' rate='1,1,1,1,1,1,1,1,1,1'/>
 <port type='out' name='n3XPARA_x0_out' rate='1,1,1,1,1,1,1,1,1,1'/>
 <port type='out' name='n3XPARA_x1_out' rate='0,0,0,0,0,0,0,0,0,1'/>
-</actor><channel name='n1_x0_out_to_n5_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n5XDA' dstPort='n5_in' size='1' initialTokens='0'/>
-<channel name='n5XDA_out_to_n4_x0_in' srcActor='n5XDA' srcPort='n5XDA_out' dstActor='n4' dstPort='n4_x0_in' size='1' initialTokens='0'/>
-<channel name='n3XPARA_x0_out_to_n2_x1_in' srcActor='n3XPARA' srcPort='n3XPARA_x0_out' dstActor='n2' dstPort='n2_x1_in' size='1' initialTokens='1'/>
-<channel name='n2_out_to_n3XPARA_in' srcActor='n2' srcPort='n2_out' dstActor='n3XPARA' dstPort='n3XPARA_in' size='1' initialTokens='0'/>
-<channel name='n3XPARA_x1_out_to_n3XRA_in' srcActor='n3XPARA' srcPort='n3XPARA_x1_out' dstActor='n3XRA' dstPort='n3XRA_in' size='1' initialTokens='0'/>
-<channel name='n4_out_to_n2_x0_in' srcActor='n4' srcPort='n4_out' dstActor='n2' dstPort='n2_x0_in' size='1' initialTokens='0'/>
+</actor><channel name='n1_x0_out_to_n5_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n5XDA' dstPort='n5_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n5XDA_out_to_n4_x0_in' srcActor='n5XDA' srcPort='n5XDA_out' dstActor='n4' dstPort='n4_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n3XPARA_x0_out_to_n2_x1_in' srcActor='n3XPARA' srcPort='n3XPARA_x0_out' dstActor='n2' dstPort='n2_x1_in' size='1' dtype='False' initialTokens='1'/>
+<channel name='n2_out_to_n3XPARA_in' srcActor='n2' srcPort='n2_out' dstActor='n3XPARA' dstPort='n3XPARA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n3XPARA_x1_out_to_n3XRA_in' srcActor='n3XPARA' srcPort='n3XPARA_x1_out' dstActor='n3XRA' dstPort='n3XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n4_out_to_n2_x0_in' srcActor='n4' srcPort='n4_out' dstActor='n2' dstPort='n2_x0_in' size='1' dtype='False' initialTokens='0'/>
     </csdf>
 
     <csdfProperties>

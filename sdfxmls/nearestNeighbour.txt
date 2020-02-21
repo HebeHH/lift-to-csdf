@@ -33,12 +33,12 @@
 <actor name='n6XRA' type='Rearray' >
 <port type='in' name='n6XRA_in' rate='10'/>
 <port type='out' name='n6_out' rate='1'/>
-</actor><channel name='n1_x0_out_to_n6_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n6XDA' dstPort='n6_in' size='1' initialTokens='0'/>
-<channel name='n4_x0_out_to_n5_x0_in' srcActor='n4' srcPort='n4_x0_out' dstActor='n5' dstPort='n5_x0_in' size='1' initialTokens='0'/>
-<channel name='n2_x0_out_to_n5_x1_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n5' dstPort='n5_x1_in' size='1' initialTokens='0'/>
-<channel name='n3_x0_out_to_n5_x2_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n5' dstPort='n5_x2_in' size='1' initialTokens='0'/>
-<channel name='n6XDA_out_to_n4_in' srcActor='n6XDA' srcPort='n6XDA_out' dstActor='n4' dstPort='n4_in' size='1' initialTokens='0'/>
-<channel name='n5_out_to_n6XRA_in' srcActor='n5' srcPort='n5_out' dstActor='n6XRA' dstPort='n6XRA_in' size='1' initialTokens='0'/>
+</actor><channel name='n1_x0_out_to_n6_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n6XDA' dstPort='n6_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n4_x0_out_to_n5_x0_in' srcActor='n4' srcPort='n4_x0_out' dstActor='n5' dstPort='n5_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n2_x0_out_to_n5_x1_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n5' dstPort='n5_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n3_x0_out_to_n5_x2_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n5' dstPort='n5_x2_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n6XDA_out_to_n4_in' srcActor='n6XDA' srcPort='n6XDA_out' dstActor='n4' dstPort='n4_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n5_out_to_n6XRA_in' srcActor='n5' srcPort='n5_out' dstActor='n6XRA' dstPort='n6XRA_in' size='1' dtype='False' initialTokens='0'/>
     </csdf>
 
     <csdfProperties>

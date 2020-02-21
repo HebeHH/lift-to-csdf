@@ -92,29 +92,29 @@
 <actor name='n17XRA' type='Rearray' >
 <port type='in' name='n17XRA_in' rate='10'/>
 <port type='out' name='n17_out' rate='1'/>
-</actor><channel name='n1_x1_out_to_n18_x0_in' srcActor='n1' srcPort='n1_x1_out' dstActor='n18' dstPort='n18_x0_in' size='1' initialTokens='0'/>
-<channel name='n2_x0_out_to_n18_x1_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n18' dstPort='n18_x1_in' size='1' initialTokens='0'/>
-<channel name='n18_out_to_n17_in' srcActor='n18' srcPort='n18_out' dstActor='n17XDA' dstPort='n17_in' size='1' initialTokens='0'/>
-<channel name='n1_x0_out_to_n16_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n16XDA' dstPort='n16_in' size='1' initialTokens='0'/>
-<channel name='n5_x0_out_to_n8_in' srcActor='n5' srcPort='n5_x0_out' dstActor='n8' dstPort='n8_in' size='1' initialTokens='0'/>
-<channel name='n8_out_to_n7_x0_in' srcActor='n8' srcPort='n8_out' dstActor='n7' dstPort='n7_x0_in' size='1' initialTokens='0'/>
-<channel name='n5_x1_out_to_n9_in' srcActor='n5' srcPort='n5_x1_out' dstActor='n9' dstPort='n9_in' size='1' initialTokens='0'/>
-<channel name='n9_out_to_n7_x1_in' srcActor='n9' srcPort='n9_out' dstActor='n7' dstPort='n7_x1_in' size='1' initialTokens='0'/>
-<channel name='n4_x0_out_to_n7_x2_in' srcActor='n4' srcPort='n4_x0_out' dstActor='n7' dstPort='n7_x2_in' size='1' initialTokens='0'/>
-<channel name='n6_x0_out_to_n7_x3_in' srcActor='n6' srcPort='n6_x0_out' dstActor='n7' dstPort='n7_x3_in' size='1' initialTokens='0'/>
-<channel name='n7_out_to_n10XRA_in' srcActor='n7' srcPort='n7_out' dstActor='n10XRA' dstPort='n10XRA_in' size='1' initialTokens='0'/>
-<channel name='n5_x2_out_to_n15_in' srcActor='n5' srcPort='n5_x2_out' dstActor='n15' dstPort='n15_in' size='1' initialTokens='0'/>
-<channel name='n15_out_to_n14_x0_in' srcActor='n15' srcPort='n15_out' dstActor='n14' dstPort='n14_x0_in' size='1' initialTokens='0'/>
-<channel name='n13_x0_out_to_n14_x1_in' srcActor='n13' srcPort='n13_x0_out' dstActor='n14' dstPort='n14_x1_in' size='1' initialTokens='0'/>
-<channel name='n4_x1_out_to_n14_x2_in' srcActor='n4' srcPort='n4_x1_out' dstActor='n14' dstPort='n14_x2_in' size='1' initialTokens='0'/>
-<channel name='n3_x0_out_to_n14_x3_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n14' dstPort='n14_x3_in' size='1' initialTokens='0'/>
-<channel name='n16XDA_out_to_n13_in' srcActor='n16XDA' srcPort='n16XDA_out' dstActor='n13' dstPort='n13_in' size='1' initialTokens='0'/>
-<channel name='n12XPARA_x0_out_to_n11_x1_in' srcActor='n12XPARA' srcPort='n12XPARA_x0_out' dstActor='n11' dstPort='n11_x1_in' size='1' initialTokens='1'/>
-<channel name='n11_out_to_n12XPARA_in' srcActor='n11' srcPort='n11_out' dstActor='n12XPARA' dstPort='n12XPARA_in' size='1' initialTokens='0'/>
-<channel name='n17XDA_out_to_n5_in' srcActor='n17XDA' srcPort='n17XDA_out' dstActor='n5' dstPort='n5_in' size='1' initialTokens='0'/>
-<channel name='n10_out_to_n17XRA_in' srcActor='n10XRA' srcPort='n10_out' dstActor='n17XRA' dstPort='n17XRA_in' size='1' initialTokens='0'/>
-<channel name='n12XPARA_x1_out_to_n6_in' srcActor='n12XPARA' srcPort='n12XPARA_x1_out' dstActor='n6' dstPort='n6_in' size='1' initialTokens='0'/>
-<channel name='n14_out_to_n11_x0_in' srcActor='n14' srcPort='n14_out' dstActor='n11' dstPort='n11_x0_in' size='1' initialTokens='0'/>
+</actor><channel name='n1_x1_out_to_n18_x0_in' srcActor='n1' srcPort='n1_x1_out' dstActor='n18' dstPort='n18_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n2_x0_out_to_n18_x1_in' srcActor='n2' srcPort='n2_x0_out' dstActor='n18' dstPort='n18_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n18_out_to_n17_in' srcActor='n18' srcPort='n18_out' dstActor='n17XDA' dstPort='n17_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n1_x0_out_to_n16_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n16XDA' dstPort='n16_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n5_x0_out_to_n8_in' srcActor='n5' srcPort='n5_x0_out' dstActor='n8' dstPort='n8_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n8_out_to_n7_x0_in' srcActor='n8' srcPort='n8_out' dstActor='n7' dstPort='n7_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n5_x1_out_to_n9_in' srcActor='n5' srcPort='n5_x1_out' dstActor='n9' dstPort='n9_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n9_out_to_n7_x1_in' srcActor='n9' srcPort='n9_out' dstActor='n7' dstPort='n7_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n4_x0_out_to_n7_x2_in' srcActor='n4' srcPort='n4_x0_out' dstActor='n7' dstPort='n7_x2_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n6_x0_out_to_n7_x3_in' srcActor='n6' srcPort='n6_x0_out' dstActor='n7' dstPort='n7_x3_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n7_out_to_n10XRA_in' srcActor='n7' srcPort='n7_out' dstActor='n10XRA' dstPort='n10XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n5_x2_out_to_n15_in' srcActor='n5' srcPort='n5_x2_out' dstActor='n15' dstPort='n15_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n15_out_to_n14_x0_in' srcActor='n15' srcPort='n15_out' dstActor='n14' dstPort='n14_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n13_x0_out_to_n14_x1_in' srcActor='n13' srcPort='n13_x0_out' dstActor='n14' dstPort='n14_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n4_x1_out_to_n14_x2_in' srcActor='n4' srcPort='n4_x1_out' dstActor='n14' dstPort='n14_x2_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n3_x0_out_to_n14_x3_in' srcActor='n3' srcPort='n3_x0_out' dstActor='n14' dstPort='n14_x3_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n16XDA_out_to_n13_in' srcActor='n16XDA' srcPort='n16XDA_out' dstActor='n13' dstPort='n13_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n12XPARA_x0_out_to_n11_x1_in' srcActor='n12XPARA' srcPort='n12XPARA_x0_out' dstActor='n11' dstPort='n11_x1_in' size='1' dtype='False' initialTokens='1'/>
+<channel name='n11_out_to_n12XPARA_in' srcActor='n11' srcPort='n11_out' dstActor='n12XPARA' dstPort='n12XPARA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n17XDA_out_to_n5_in' srcActor='n17XDA' srcPort='n17XDA_out' dstActor='n5' dstPort='n5_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_out_to_n17XRA_in' srcActor='n10XRA' srcPort='n10_out' dstActor='n17XRA' dstPort='n17XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n12XPARA_x1_out_to_n6_in' srcActor='n12XPARA' srcPort='n12XPARA_x1_out' dstActor='n6' dstPort='n6_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n14_out_to_n11_x0_in' srcActor='n14' srcPort='n14_out' dstActor='n11' dstPort='n11_x0_in' size='1' dtype='False' initialTokens='0'/>
     </csdf>
 
     <csdfProperties>
