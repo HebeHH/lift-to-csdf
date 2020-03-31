@@ -1,8 +1,0 @@
-val N = SizeVar("N")
-
-fun(
-  ArrayType(Float, N),
-  Float,
-  (vector, alpha) =>
-    Map(fun(x => mult(x, alpha))) $ vector
-)
