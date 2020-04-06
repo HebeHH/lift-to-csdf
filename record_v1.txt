@@ -1,0 +1,216 @@
+
+mystuff/mmNN.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.000000000e-05
+Maximum period     is 50000.000000
+KPeriodicThroughput duration=0.000166
+mystuff/mmnn_parallel.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.555555556e-05
+Maximum period     is 18000.000000
+KPeriodicThroughput duration=0.000217
+mystuff/mmnn_parallel_30.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.781015146e-08
+Maximum period     is 17298000.000000
+KPeriodicThroughput duration=0.000631
+mystuff/mmnn_parallel_popfirst30.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.781015146e-08
+Maximum period     is 17298000.000000
+KPeriodicThroughput duration=0.000633
+mystuff/mmnn_parallel_timelyparams.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.555555556e-05
+Maximum period     is 18000.000000
+KPeriodicThroughput duration=0.000196
+mystuff/mmnn_rec.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.153846154e-05
+Maximum period     is 16250.000000
+KPeriodicThroughput duration=0.000173
+mystuff/mmnn_rec_30.xml
+Run KPeriodicThroughput
+Maximum throughput is 4.748338082e-08
+Maximum period     is 21060000.000000
+KPeriodicThroughput duration=0.000164
+mystuff/par_asum.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.666666667e-03
+Maximum period     is  600.000000
+KPeriodicThroughput duration=0.000118
+mystuff/par_blackScholes.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.666666667e-04
+Maximum period     is 1500.000000
+KPeriodicThroughput duration=0.000069
+mystuff/par_dot.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.150537634e-05
+Maximum period     is 46500.000000
+KPeriodicThroughput duration=0.000620
+mystuff/par_gemvN.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.734304544e-06
+Maximum period     is 576600.000000
+KPeriodicThroughput duration=0.000654
+mystuff/par_gemvT.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.734304544e-06
+Maximum period     is 576600.000000
+KPeriodicThroughput duration=0.000867
+mystuff/par_gesummvNN.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.000000000e-02
+Maximum period     is   50.000000
+KPeriodicThroughput duration=0.000080
+mystuff/par_gesummvTT.xml
+Run KPeriodicThroughput
+Maximum throughput is 3.333333333e-03
+Maximum period     is  300.000000
+KPeriodicThroughput duration=0.000089
+mystuff/par_mandelbrot.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.222222222e-05
+Maximum period     is 45000.000000
+KPeriodicThroughput duration=0.000090
+mystuff/par_mmNN.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.781015146e-08
+Maximum period     is 17298000.000000
+KPeriodicThroughput duration=0.000644
+mystuff/par_mmNT.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.781015146e-08
+Maximum period     is 17298000.000000
+KPeriodicThroughput duration=0.000687
+mystuff/par_mmTN.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.781015146e-08
+Maximum period     is 17298000.000000
+KPeriodicThroughput duration=0.000623
+mystuff/par_mmTT.xml
+Run KPeriodicThroughput
+Maximum throughput is 5.781015146e-08
+Maximum period     is 17298000.000000
+KPeriodicThroughput duration=0.000639
+mystuff/par_mriqComputeQ.xml
+Run KPeriodicThroughput
+Maximum throughput is 7.168458781e-07
+Maximum period     is 1395000.000000
+KPeriodicThroughput duration=0.000508
+mystuff/par_mriqPhiMag.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.666666667e-04
+Maximum period     is 1500.000000
+KPeriodicThroughput duration=0.000090
+mystuff/par_mv.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.734304544e-06
+Maximum period     is 576600.000000
+KPeriodicThroughput duration=0.000630
+mystuff/par_mvAsMM.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.734304544e-06
+Maximum period     is 576600.000000
+KPeriodicThroughput duration=0.000653
+mystuff/par_nearestNeighbour.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.666666667e-04
+Maximum period     is 1500.000000
+KPeriodicThroughput duration=0.000080
+mystuff/par_scal.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.666666667e-03
+Maximum period     is  600.000000
+KPeriodicThroughput duration=0.000073
+mystuff/rec_asum.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.666666667e-03
+Maximum period     is  600.000000
+KPeriodicThroughput duration=0.000088
+mystuff/rec_blackScholes.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.666666667e-04
+Maximum period     is 1500.000000
+KPeriodicThroughput duration=0.000081
+mystuff/rec_dot.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.222222222e-05
+Maximum period     is 45000.000000
+KPeriodicThroughput duration=0.000121
+mystuff/rec_gemvN.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.424501425e-06
+Maximum period     is 702000.000000
+KPeriodicThroughput duration=0.000190
+mystuff/rec_gemvT.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.424501425e-06
+Maximum period     is 702000.000000
+KPeriodicThroughput duration=0.000189
+mystuff/rec_gesummvNN.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.000000000e-02
+Maximum period     is   50.000000
+KPeriodicThroughput duration=0.000088
+mystuff/rec_gesummvTT.xml
+Run KPeriodicThroughput
+Maximum throughput is 3.333333333e-03
+Maximum period     is  300.000000
+KPeriodicThroughput duration=0.000088
+mystuff/rec_mandelbrot.xml
+Run KPeriodicThroughput
+Maximum throughput is 2.222222222e-05
+Maximum period     is 45000.000000
+KPeriodicThroughput duration=0.000091
+mystuff/rec_mmNN.xml
+Run KPeriodicThroughput
+Maximum throughput is 4.748338082e-08
+Maximum period     is 21060000.000000
+KPeriodicThroughput duration=0.000223
+mystuff/rec_mmNT.xml
+Run KPeriodicThroughput
+Maximum throughput is 4.748338082e-08
+Maximum period     is 21060000.000000
+KPeriodicThroughput duration=0.000245
+mystuff/rec_mmTN.xml
+Run KPeriodicThroughput
+Maximum throughput is 4.748338082e-08
+Maximum period     is 21060000.000000
+KPeriodicThroughput duration=0.000233
+mystuff/rec_mmTT.xml
+Run KPeriodicThroughput
+Maximum throughput is 4.748338082e-08
+Maximum period     is 21060000.000000
+KPeriodicThroughput duration=0.000262
+mystuff/rec_mriqComputeQ.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.613756614e-07
+Maximum period     is 1512000.000000
+KPeriodicThroughput duration=0.000180
+mystuff/rec_mriqPhiMag.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.666666667e-04
+Maximum period     is 1500.000000
+KPeriodicThroughput duration=0.000164
+mystuff/rec_mv.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.424501425e-06
+Maximum period     is 702000.000000
+KPeriodicThroughput duration=0.000209
+mystuff/rec_mvAsMM.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.424501425e-06
+Maximum period     is 702000.000000
+KPeriodicThroughput duration=0.000170
+mystuff/rec_nearestNeighbour.xml
+Run KPeriodicThroughput
+Maximum throughput is 6.666666667e-04
+Maximum period     is 1500.000000
+KPeriodicThroughput duration=0.000083
+mystuff/rec_scal.xml
+Run KPeriodicThroughput
+Maximum throughput is 1.666666667e-03
+Maximum period     is  600.000000
+KPeriodicThroughput duration=0.000085
