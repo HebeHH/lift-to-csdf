@@ -1,0 +1,48 @@
+val calcAccNoAdd =
+UserFun("calcAcc", Array("p1", "p2", "deltaT", "espSqr"),
+    """|{
+    |  float4 r;
+    |  r.xyz = p2.xyz - p1.xyz ;
+    |  float distSqr = r.x*r.x + r.y*r.y + r.z*r.z;
+    |  float invDist = 1.0f / sqrt(distSqr + espSqr);
+    |  float invDistCube = invDist * invDist * invDist;
+    |  float s = invDistCube * p2.w;
+    |  float4 res;
+    |  res.xyz = s * r.xyz;
+    |  return res;
+    |}
+    | """.stripMargin,
+    Seq(Float4, Float4, Float, Float), Float4)
+
+val update =
+UserFun("update", Array("pos", "vel", "deltaT", "acceleration"),
+    """|{
+    |  float4 newPos;
+    |  newPos.xyz = pos.xyz + vel.xyz * deltaT + 0.5f * acceleration.xyz * deltaT * deltaT;
+    |  newPos.w = pos.w;
+    |  float4 newVel;
+    |  newVel.xyz = vel.xyz + acceleration.xyz * deltaT;
+    |  newVel.w = vel.w;
+    |  Tuple t = {newPos, newVel};
+    |  return t;
+    |}
+    """.stripMargin,
+    Seq(Float4, Float4, Float, Float4), TupleType(Float4, Float4))
+
+val N = SizeVar("N")
+
+fun(
+    ArrayType(Float4, N),
+    ArrayType(Float4, N),
+    Float,
+    Float,
+    (pos, vel, espSqr, deltaT) =>
+    Map(fun(p1 =>
+        Map(fun(acceleration =>
+            update(Get(p1, 0), Get(p1, 1), deltaT, acceleration)
+            )) o Reduce(VectorizeUserFun(4, add), Value("0.0f", Float4)
+            ) o Map(\(p2 =>
+              calcAccNoAdd(Get(p1,0), p2, deltaT, espSqr)
+              )) $ pos
+      )) $ Zip(pos, vel)
+)
