@@ -1,0 +1,7 @@
+val N = SizeVar("N")
+
+fun(
+  ArrayType(Float, N),
+  (A) =>
+  	Reduce(\((v1, v2) => userfun(v1, v2)), 0) $ A
+)
