@@ -1,0 +1,14 @@
+val K = SizeVar("K")
+val N = SizeVar("N")
+
+
+fun(
+  ArrayType(Float, N),
+  ArrayType(Float, K),
+  (arr, ls) =>
+  	Map(fun(e => 
+  		Reduce(add, e) $ ls
+  		)) $ arr
+)
+
+

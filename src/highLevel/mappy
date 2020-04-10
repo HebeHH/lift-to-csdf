@@ -1,0 +1,17 @@
+val K = SizeVar("K")
+val N = SizeVar("N")
+
+
+fun(
+  ArrayType(Float, K),
+  Float,
+  Float,
+  Float,
+  (R, alpha, beta, ceta) =>
+  	Map(fun(x => mult(x, alpha))) $
+  	Map(fun(y => mult(y, beta))) $
+  	Map(fun(z => mult(z, ceta))) $
+  	R
+)
+
+

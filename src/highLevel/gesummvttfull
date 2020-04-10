@@ -1,0 +1,29 @@
+val K = SizeVar("K")
+val N = SizeVar("N")
+
+
+fun(
+  ArrayType(ArrayType(Float, K), N),
+  ArrayType(ArrayType(Float, K), N),
+  ArrayType(Float, K),
+  Float,
+  Float,
+  (A, B, xed, alpha, beta) =>
+  Map(fun(xe => add(xe._0, xe._1))) $ Zip(
+    Join() o
+          Map(fun(row =>
+            Map(fun(x => mult(x, alpha))) o
+              Reduce(add, 0.0f) o Map(fun(y => mult(y._0, y._1))) $ Zip(row, xed)
+          )) $ Transpose() $ A,
+        Join() o
+          Map(fun(row2 =>
+            Map(fun(x2 => mult(x2, beta))) o
+              Reduce(add, 0.0f) o Map(fun(y2 => mult(y2._0, y2._1))) $ Zip(row2, xed)
+          )) $ Transpose() $ B)
+)
+
+
+
+
+
+

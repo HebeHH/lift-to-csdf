@@ -1,0 +1,12 @@
+val K = SizeVar("K")
+val N = SizeVar("N")
+
+fun(
+  ArrayType(ArrayType(Float, K), N),
+  ArrayType(Float, K),
+  (R, I) =>
+  	R :>> Reduce(\((A, B) =>
+  	  	    Map(fun(x => 
+  	  	        		mult(Get(x, 0), Get(x, 1))))
+  	  	    $ Zip(A, B)), I)
+)
