@@ -21,16 +21,10 @@ naivemethods = [recursive_map, recursive_reduce]
 parmapmethods = [parallel_map, recursive_reduce]
 
 
-# In[ ]:
-
-
-
-
-
 # In[22]:
 
 
-def generate_and_write(svs, fs):
+def generate_and_write_depreciated(svs, fs):
     csdfs = []
 
     print("Generating")
@@ -75,21 +69,57 @@ def generate_and_write(svs, fs):
     print('Finished')
 
 
+# In[33]:
+
+
+def write_all(fn, method_name, method_list, sv, path = "highLevel/"):
+    name = "curr/" + fn + str(sv) + "_" + method_name
+    csdf = try_do(path+fn, method_list, [sv] * 10)
+
+    if csdf != False:
+        g = csdf['graph']
+        write_csdf(g, name + "_.xml")
+
+        g_copy = copy.deepcopy(g)
+        g_copy = discrete_zip(g_copy, None)
+        write_csdf(g_copy, name + "_dz_.xml")
+
+        g = compose_maps(g)
+        write_csdf(g, name + "_cmap_.xml")
+
+        g = discrete_zip(g, None)
+        write_csdf(g, name + "_dz_cmap_.xml")
+
+def generate_and_write(svs, fs):
+    for filename in fs:
+        print("Writing", filename)
+        for sv in tqdm(svs):
+            write_all(filename, "par", parmethods, sv)
+            write_all(filename, "naive", naivemethods, sv)
+            write_all(filename, "parreduce", parreducemethods, sv)
+            write_all(filename, "parmap", parmapmethods, sv)
+
+
 # In[23]:
 
 
-mypath = 'highlevel/'
+mypath = 'highLevel/'
 fs = [f for f in listdir(mypath) if isfile(join(mypath, f)) and not f.endswith('json')]
 fs = [x for x in fs if 'mm' not in x] + ['mmNT']
 
 
-# In[30]:
+# In[34]:
 
 
 if sys.argv[1] == 'all':
     generate_and_write([1,2,3,4,5,10,15,20,25,30,50,70,100], fs)
-else:
+elif sys.argv[1] == "test":
     generate_and_write([3], ['mydotsmol'])
+else: 
+    ls = [int(x) for x in sys.argv[1].split(',')]
+    if len(sys.argv) > 2:
+        fs = [sys.argv[2]]
+    generate_and_write(ls, fs)
 
 
 # In[ ]:

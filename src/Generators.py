@@ -520,7 +520,7 @@ def try_do(filename, methods, sizevar_file = None):
         return(p)
     except Exception as e:
         print("\nCouldn't get CSDF for " + filename)
-#        raise(e)
+        raise(e)
         return False
 
 

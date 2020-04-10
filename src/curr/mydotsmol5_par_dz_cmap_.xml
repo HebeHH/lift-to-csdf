@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="csdf" version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.es.ele.tue.nl/sdf3/xsd/sdf3-csdf.xsd">
+<applicationGraph name='autogen'>
+    <csdf name='autogen' type='autogen'>
+    <actor name='n1' type='Param' >
+<port type='in' name='n1_in' rate='1'/>
+<port type='out' name='n1_x0_out' rate='1'/>
+</actor>
+<actor name='n2' type='Param' >
+<port type='in' name='n2_in' rate='1'/>
+</actor>
+<actor name='n11XDA' type='Dearray' >
+<port type='in' name='n11_in' rate='1'/>
+<port type='out' name='n11XDA_out' rate='5'/>
+</actor>
+<actor name='n11XRA' type='Rearray' >
+<port type='in' name='n11XRA_in' rate='1'/>
+<port type='out' name='n11_out' rate='1'/>
+</actor>
+<actor name='n11XInitVal' type='Value' value='I' kind='Array (5, Float)'>
+<port type='out' name='n11XInitVal_out' rate='1'/>
+</actor>
+<actor name='n11XSpl' type='Splitter' >
+<port type='in' name='n11XSpl_in' rate='1,1,1,1,1'/>
+<port type='out' name='n11XSpl_out_x0' rate='1,0,0,0,0'/>
+<port type='out' name='n11XSpl_out_x1' rate='0,1,0,0,0'/>
+<port type='out' name='n11XSpl_out_x2' rate='0,0,1,0,0'/>
+<port type='out' name='n11XSpl_out_x3' rate='0,0,0,1,0'/>
+<port type='out' name='n11XSpl_out_x4' rate='0,0,0,0,1'/>
+</actor>
+<actor name='n3_x0' type='Param' >
+<port type='in' name='n3_in_x0' rate='1'/>
+<port type='out' name='n3_x0_out_x0' rate='1'/>
+</actor>
+<actor name='n4_x0' type='Param' >
+<port type='in' name='n4_in_x0' rate='1'/>
+<port type='out' name='n4_x0_out_x0' rate='1'/>
+</actor>
+<actor name='n9XDA_x0' type='Dearray' >
+<port type='in' name='n9_in_x0' rate='1'/>
+<port type='out' name='n9XDA_out_x0' rate='5'/>
+</actor>
+<actor name='n9XRA_x0' type='Rearray' >
+<port type='in' name='n9XRA_in_x0' rate='5'/>
+<port type='out' name='n9_out_x0' rate='1'/>
+</actor>
+<actor name='n9XJnr_x0' type='Joiner' >
+<port type='in' name='n9XJnr_in_x0_x0' rate='1'/>
+<port type='in' name='n9XJnr_in_x1_x0' rate='1'/>
+<port type='in' name='n9XJnr_in_x2_x0' rate='1'/>
+<port type='in' name='n9XJnr_in_x3_x0' rate='1'/>
+<port type='in' name='n9XJnr_in_x4_x0' rate='1'/>
+<port type='out' name='n9XJnr_out_x0' rate='5'/>
+</actor>
+<actor name='n9XSpl_x0' type='Splitter' >
+<port type='in' name='n9XSpl_in_x0' rate='1,1,1,1,1'/>
+<port type='out' name='n9XSpl_out_x0_x0' rate='1,0,0,0,0'/>
+<port type='out' name='n9XSpl_out_x1_x0' rate='0,1,0,0,0'/>
+<port type='out' name='n9XSpl_out_x2_x0' rate='0,0,1,0,0'/>
+<port type='out' name='n9XSpl_out_x3_x0' rate='0,0,0,1,0'/>
+<port type='out' name='n9XSpl_out_x4_x0' rate='0,0,0,0,1'/>
+</actor>
+<actor name='n5_x1_x0' type='Param' >
+<port type='in' name='n5_in_x1_x0' rate='1'/>
+<port type='out' name='n5_x0_out_x1_x0' rate='1'/>
+<port type='out' name='n5_x1_out_x1_x0' rate='1'/>
+</actor>
+<actor name='n7_x1_x0' type='Get' >
+<port type='in' name='n7_in_x1_x0' rate='1'/>
+<port type='out' name='n7_out_x1_x0' rate='1'/>
+</actor>
+<actor name='n8_x1_x0' type='Get' >
+<port type='in' name='n8_in_x1_x0' rate='1'/>
+<port type='out' name='n8_out_x1_x0' rate='1'/>
+</actor>
+<actor name='n6_x1_x0' type='mult'>
+<port type='out' name='n6_out_x1_x0' rate='1'/>
+<port type='in' name='n6_x0_in_x1_x0' rate='1'/>
+<port type='in' name='n6_x1_in_x1_x0' rate='1'/>
+</actor>
+<actor name='n5_x2_x0' type='Param' >
+<port type='in' name='n5_in_x2_x0' rate='1'/>
+<port type='out' name='n5_x0_out_x2_x0' rate='1'/>
+<port type='out' name='n5_x1_out_x2_x0' rate='1'/>
+</actor>
+<actor name='n7_x2_x0' type='Get' >
+<port type='in' name='n7_in_x2_x0' rate='1'/>
+<port type='out' name='n7_out_x2_x0' rate='1'/>
+</actor>
+<actor name='n8_x2_x0' type='Get' >
+<port type='in' name='n8_in_x2_x0' rate='1'/>
+<port type='out' name='n8_out_x2_x0' rate='1'/>
+</actor>
+<actor name='n6_x2_x0' type='mult'>
+<port type='out' name='n6_out_x2_x0' rate='1'/>
+<port type='in' name='n6_x0_in_x2_x0' rate='1'/>
+<port type='in' name='n6_x1_in_x2_x0' rate='1'/>
+</actor>
+<actor name='n5_x3_x0' type='Param' >
+<port type='in' name='n5_in_x3_x0' rate='1'/>
+<port type='out' name='n5_x0_out_x3_x0' rate='1'/>
+<port type='out' name='n5_x1_out_x3_x0' rate='1'/>
+</actor>
+<actor name='n7_x3_x0' type='Get' >
+<port type='in' name='n7_in_x3_x0' rate='1'/>
+<port type='out' name='n7_out_x3_x0' rate='1'/>
+</actor>
+<actor name='n8_x3_x0' type='Get' >
+<port type='in' name='n8_in_x3_x0' rate='1'/>
+<port type='out' name='n8_out_x3_x0' rate='1'/>
+</actor>
+<actor name='n6_x3_x0' type='mult'>
+<port type='out' name='n6_out_x3_x0' rate='1'/>
+<port type='in' name='n6_x0_in_x3_x0' rate='1'/>
+<port type='in' name='n6_x1_in_x3_x0' rate='1'/>
+</actor>
+<actor name='n5_x4_x0' type='Param' >
+<port type='in' name='n5_in_x4_x0' rate='1'/>
+<port type='out' name='n5_x0_out_x4_x0' rate='1'/>
+<port type='out' name='n5_x1_out_x4_x0' rate='1'/>
+</actor>
+<actor name='n7_x4_x0' type='Get' >
+<port type='in' name='n7_in_x4_x0' rate='1'/>
+<port type='out' name='n7_out_x4_x0' rate='1'/>
+</actor>
+<actor name='n8_x4_x0' type='Get' >
+<port type='in' name='n8_in_x4_x0' rate='1'/>
+<port type='out' name='n8_out_x4_x0' rate='1'/>
+</actor>
+<actor name='n6_x4_x0' type='mult'>
+<port type='out' name='n6_out_x4_x0' rate='1'/>
+<port type='in' name='n6_x0_in_x4_x0' rate='1'/>
+<port type='in' name='n6_x1_in_x4_x0' rate='1'/>
+</actor>
+<actor name='n5_x5_x0' type='Param' >
+<port type='in' name='n5_in_x5_x0' rate='1'/>
+<port type='out' name='n5_x0_out_x5_x0' rate='1'/>
+<port type='out' name='n5_x1_out_x5_x0' rate='1'/>
+</actor>
+<actor name='n7_x5_x0' type='Get' >
+<port type='in' name='n7_in_x5_x0' rate='1'/>
+<port type='out' name='n7_out_x5_x0' rate='1'/>
+</actor>
+<actor name='n8_x5_x0' type='Get' >
+<port type='in' name='n8_in_x5_x0' rate='1'/>
+<port type='out' name='n8_out_x5_x0' rate='1'/>
+</actor>
+<actor name='n6_x5_x0' type='mult'>
+<port type='out' name='n6_out_x5_x0' rate='1'/>
+<port type='in' name='n6_x0_in_x5_x0' rate='1'/>
+<port type='in' name='n6_x1_in_x5_x0' rate='1'/>
+</actor>
+<actor name='n3_x1' type='Param' >
+<port type='in' name='n3_in_x1' rate='1'/>
+<port type='out' name='n3_x0_out_x1' rate='1'/>
+</actor>
+<actor name='n4_x1' type='Param' >
+<port type='in' name='n4_in_x1' rate='1'/>
+<port type='out' name='n4_x0_out_x1' rate='1'/>
+</actor>
+<actor name='n9XDA_x1' type='Dearray' >
+<port type='in' name='n9_in_x1' rate='1'/>
+<port type='out' name='n9XDA_out_x1' rate='5'/>
+</actor>
+<actor name='n9XRA_x1' type='Rearray' >
+<port type='in' name='n9XRA_in_x1' rate='5'/>
+<port type='out' name='n9_out_x1' rate='1'/>
+</actor>
+<actor name='n9XJnr_x1' type='Joiner' >
+<port type='in' name='n9XJnr_in_x0_x1' rate='1'/>
+<port type='in' name='n9XJnr_in_x1_x1' rate='1'/>
+<port type='in' name='n9XJnr_in_x2_x1' rate='1'/>
+<port type='in' name='n9XJnr_in_x3_x1' rate='1'/>
+<port type='in' name='n9XJnr_in_x4_x1' rate='1'/>
+<port type='out' name='n9XJnr_out_x1' rate='5'/>
+</actor>
+<actor name='n9XSpl_x1' type='Splitter' >
+<port type='in' name='n9XSpl_in_x1' rate='1,1,1,1,1'/>
+<port type='out' name='n9XSpl_out_x0_x1' rate='1,0,0,0,0'/>
+<port type='out' name='n9XSpl_out_x1_x1' rate='0,1,0,0,0'/>
+<port type='out' name='n9XSpl_out_x2_x1' rate='0,0,1,0,0'/>
+<port type='out' name='n9XSpl_out_x3_x1' rate='0,0,0,1,0'/>
+<port type='out' name='n9XSpl_out_x4_x1' rate='0,0,0,0,1'/>
+</actor>
+<actor name='n5_x1_x1' type='Param' >
+<port type='in' name='n5_in_x1_x1' rate='1'/>
+<port type='out' name='n5_x0_out_x1_x1' rate='1'/>
+<port type='out' name='n5_x1_out_x1_x1' rate='1'/>
+</actor>
+<actor name='n7_x1_x1' type='Get' >
+<port type='in' name='n7_in_x1_x1' rate='1'/>
+<port type='out' name='n7_out_x1_x1' rate='1'/>
+</actor>
+<actor name='n8_x1_x1' type='Get' >
+<port type='in' name='n8_in_x1_x1' rate='1'/>
+<port type='out' name='n8_out_x1_x1' rate='1'/>
+</actor>
+<actor name='n6_x1_x1' type='mult'>
+<port type='out' name='n6_out_x1_x1' rate='1'/>
+<port type='in' name='n6_x0_in_x1_x1' rate='1'/>
+<port type='in' name='n6_x1_in_x1_x1' rate='1'/>
+</actor>
+<actor name='n5_x2_x1' type='Param' >
+<port type='in' name='n5_in_x2_x1' rate='1'/>
+<port type='out' name='n5_x0_out_x2_x1' rate='1'/>
+<port type='out' name='n5_x1_out_x2_x1' rate='1'/>
+</actor>
+<actor name='n7_x2_x1' type='Get' >
+<port type='in' name='n7_in_x2_x1' rate='1'/>
+<port type='out' name='n7_out_x2_x1' rate='1'/>
+</actor>
+<actor name='n8_x2_x1' type='Get' >
+<port type='in' name='n8_in_x2_x1' rate='1'/>
+<port type='out' name='n8_out_x2_x1' rate='1'/>
+</actor>
+<actor name='n6_x2_x1' type='mult'>
+<port type='out' name='n6_out_x2_x1' rate='1'/>
+<port type='in' name='n6_x0_in_x2_x1' rate='1'/>
+<port type='in' name='n6_x1_in_x2_x1' rate='1'/>
+</actor>
+<actor name='n5_x3_x1' type='Param' >
+<port type='in' name='n5_in_x3_x1' rate='1'/>
+<port type='out' name='n5_x0_out_x3_x1' rate='1'/>
+<port type='out' name='n5_x1_out_x3_x1' rate='1'/>
+</actor>
+<actor name='n7_x3_x1' type='Get' >
+<port type='in' name='n7_in_x3_x1' rate='1'/>
+<port type='out' name='n7_out_x3_x1' rate='1'/>
+</actor>
+<actor name='n8_x3_x1' type='Get' >
+<port type='in' name='n8_in_x3_x1' rate='1'/>
+<port type='out' name='n8_out_x3_x1' rate='1'/>
+</actor>
+<actor name='n6_x3_x1' type='mult'>
+<port type='out' name='n6_out_x3_x1' rate='1'/>
+<port type='in' name='n6_x0_in_x3_x1' rate='1'/>
+<port type='in' name='n6_x1_in_x3_x1' rate='1'/>
+</actor>
+<actor name='n5_x4_x1' type='Param' >
+<port type='in' name='n5_in_x4_x1' rate='1'/>
+<port type='out' name='n5_x0_out_x4_x1' rate='1'/>
+<port type='out' name='n5_x1_out_x4_x1' rate='1'/>
+</actor>
+<actor name='n7_x4_x1' type='Get' >
+<port type='in' name='n7_in_x4_x1' rate='1'/>
+<port type='out' name='n7_out_x4_x1' rate='1'/>
+</actor>
+<actor name='n8_x4_x1' type='Get' >
+<port type='in' name='n8_in_x4_x1' rate='1'/>
+<port type='out' name='n8_out_x4_x1' rate='1'/>
+</actor>
+<actor name='n6_x4_x1' type='mult'>
+<port type='out' name='n6_out_x4_x1' rate='1'/>
+<port type='in' name='n6_x0_in_x4_x1' rate='1'/>
+<port type='in' name='n6_x1_in_x4_x1' rate='1'/>
+</actor>
+<actor name='n5_x5_x1' type='Param' >
+<port type='in' name='n5_in_x5_x1' rate='1'/>
+<port type='out' name='n5_x0_out_x5_x1' rate='1'/>
+<port type='out' name='n5_x1_out_x5_x1' rate='1'/>
+</actor>
+<actor name='n7_x5_x1' type='Get' >
+<port type='in' name='n7_in_x5_x1' rate='1'/>
+<port type='out' name='n7_out_x5_x1' rate='1'/>
+</actor>
+<actor name='n8_x5_x1' type='Get' >
+<port type='in' name='n8_in_x5_x1' rate='1'/>
+<port type='out' name='n8_out_x5_x1' rate='1'/>
+</actor>
+<actor name='n6_x5_x1' type='mult'>
+<port type='out' name='n6_out_x5_x1' rate='1'/>
+<port type='in' name='n6_x0_in_x5_x1' rate='1'/>
+<port type='in' name='n6_x1_in_x5_x1' rate='1'/>
+</actor>
+<actor name='n3_x2' type='Param' >
+<port type='in' name='n3_in_x2' rate='1'/>
+<port type='out' name='n3_x0_out_x2' rate='1'/>
+</actor>
+<actor name='n4_x2' type='Param' >
+<port type='in' name='n4_in_x2' rate='1'/>
+<port type='out' name='n4_x0_out_x2' rate='1'/>
+</actor>
+<actor name='n9XDA_x2' type='Dearray' >
+<port type='in' name='n9_in_x2' rate='1'/>
+<port type='out' name='n9XDA_out_x2' rate='5'/>
+</actor>
+<actor name='n9XRA_x2' type='Rearray' >
+<port type='in' name='n9XRA_in_x2' rate='5'/>
+<port type='out' name='n9_out_x2' rate='1'/>
+</actor>
+<actor name='n9XJnr_x2' type='Joiner' >
+<port type='in' name='n9XJnr_in_x0_x2' rate='1'/>
+<port type='in' name='n9XJnr_in_x1_x2' rate='1'/>
+<port type='in' name='n9XJnr_in_x2_x2' rate='1'/>
+<port type='in' name='n9XJnr_in_x3_x2' rate='1'/>
+<port type='in' name='n9XJnr_in_x4_x2' rate='1'/>
+<port type='out' name='n9XJnr_out_x2' rate='5'/>
+</actor>
+<actor name='n9XSpl_x2' type='Splitter' >
+<port type='in' name='n9XSpl_in_x2' rate='1,1,1,1,1'/>
+<port type='out' name='n9XSpl_out_x0_x2' rate='1,0,0,0,0'/>
+<port type='out' name='n9XSpl_out_x1_x2' rate='0,1,0,0,0'/>
+<port type='out' name='n9XSpl_out_x2_x2' rate='0,0,1,0,0'/>
+<port type='out' name='n9XSpl_out_x3_x2' rate='0,0,0,1,0'/>
+<port type='out' name='n9XSpl_out_x4_x2' rate='0,0,0,0,1'/>
+</actor>
+<actor name='n5_x1_x2' type='Param' >
+<port type='in' name='n5_in_x1_x2' rate='1'/>
+<port type='out' name='n5_x0_out_x1_x2' rate='1'/>
+<port type='out' name='n5_x1_out_x1_x2' rate='1'/>
+</actor>
+<actor name='n7_x1_x2' type='Get' >
+<port type='in' name='n7_in_x1_x2' rate='1'/>
+<port type='out' name='n7_out_x1_x2' rate='1'/>
+</actor>
+<actor name='n8_x1_x2' type='Get' >
+<port type='in' name='n8_in_x1_x2' rate='1'/>
+<port type='out' name='n8_out_x1_x2' rate='1'/>
+</actor>
+<actor name='n6_x1_x2' type='mult'>
+<port type='out' name='n6_out_x1_x2' rate='1'/>
+<port type='in' name='n6_x0_in_x1_x2' rate='1'/>
+<port type='in' name='n6_x1_in_x1_x2' rate='1'/>
+</actor>
+<actor name='n5_x2_x2' type='Param' >
+<port type='in' name='n5_in_x2_x2' rate='1'/>
+<port type='out' name='n5_x0_out_x2_x2' rate='1'/>
+<port type='out' name='n5_x1_out_x2_x2' rate='1'/>
+</actor>
+<actor name='n7_x2_x2' type='Get' >
+<port type='in' name='n7_in_x2_x2' rate='1'/>
+<port type='out' name='n7_out_x2_x2' rate='1'/>
+</actor>
+<actor name='n8_x2_x2' type='Get' >
+<port type='in' name='n8_in_x2_x2' rate='1'/>
+<port type='out' name='n8_out_x2_x2' rate='1'/>
+</actor>
+<actor name='n6_x2_x2' type='mult'>
+<port type='out' name='n6_out_x2_x2' rate='1'/>
+<port type='in' name='n6_x0_in_x2_x2' rate='1'/>
+<port type='in' name='n6_x1_in_x2_x2' rate='1'/>
+</actor>
+<actor name='n5_x3_x2' type='Param' >
+<port type='in' name='n5_in_x3_x2' rate='1'/>
+<port type='out' name='n5_x0_out_x3_x2' rate='1'/>
+<port type='out' name='n5_x1_out_x3_x2' rate='1'/>
+</actor>
+<actor name='n7_x3_x2' type='Get' >
+<port type='in' name='n7_in_x3_x2' rate='1'/>
+<port type='out' name='n7_out_x3_x2' rate='1'/>
+</actor>
+<actor name='n8_x3_x2' type='Get' >
+<port type='in' name='n8_in_x3_x2' rate='1'/>
+<port type='out' name='n8_out_x3_x2' rate='1'/>
+</actor>
+<actor name='n6_x3_x2' type='mult'>
+<port type='out' name='n6_out_x3_x2' rate='1'/>
+<port type='in' name='n6_x0_in_x3_x2' rate='1'/>
+<port type='in' name='n6_x1_in_x3_x2' rate='1'/>
+</actor>
+<actor name='n5_x4_x2' type='Param' >
+<port type='in' name='n5_in_x4_x2' rate='1'/>
+<port type='out' name='n5_x0_out_x4_x2' rate='1'/>
+<port type='out' name='n5_x1_out_x4_x2' rate='1'/>
+</actor>
+<actor name='n7_x4_x2' type='Get' >
+<port type='in' name='n7_in_x4_x2' rate='1'/>
+<port type='out' name='n7_out_x4_x2' rate='1'/>
+</actor>
+<actor name='n8_x4_x2' type='Get' >
+<port type='in' name='n8_in_x4_x2' rate='1'/>
+<port type='out' name='n8_out_x4_x2' rate='1'/>
+</actor>
+<actor name='n6_x4_x2' type='mult'>
+<port type='out' name='n6_out_x4_x2' rate='1'/>
+<port type='in' name='n6_x0_in_x4_x2' rate='1'/>
+<port type='in' name='n6_x1_in_x4_x2' rate='1'/>
+</actor>
+<actor name='n5_x5_x2' type='Param' >
+<port type='in' name='n5_in_x5_x2' rate='1'/>
+<port type='out' name='n5_x0_out_x5_x2' rate='1'/>
+<port type='out' name='n5_x1_out_x5_x2' rate='1'/>
+</actor>
+<actor name='n7_x5_x2' type='Get' >
+<port type='in' name='n7_in_x5_x2' rate='1'/>
+<port type='out' name='n7_out_x5_x2' rate='1'/>
+</actor>
+<actor name='n8_x5_x2' type='Get' >
+<port type='in' name='n8_in_x5_x2' rate='1'/>
+<port type='out' name='n8_out_x5_x2' rate='1'/>
+</actor>
+<actor name='n6_x5_x2' type='mult'>
+<port type='out' name='n6_out_x5_x2' rate='1'/>
+<port type='in' name='n6_x0_in_x5_x2' rate='1'/>
+<port type='in' name='n6_x1_in_x5_x2' rate='1'/>
+</actor>
+<actor name='n3_x3' type='Param' >
+<port type='in' name='n3_in_x3' rate='1'/>
+<port type='out' name='n3_x0_out_x3' rate='1'/>
+</actor>
+<actor name='n4_x3' type='Param' >
+<port type='in' name='n4_in_x3' rate='1'/>
+<port type='out' name='n4_x0_out_x3' rate='1'/>
+</actor>
+<actor name='n9XDA_x3' type='Dearray' >
+<port type='in' name='n9_in_x3' rate='1'/>
+<port type='out' name='n9XDA_out_x3' rate='5'/>
+</actor>
+<actor name='n9XRA_x3' type='Rearray' >
+<port type='in' name='n9XRA_in_x3' rate='5'/>
+<port type='out' name='n9_out_x3' rate='1'/>
+</actor>
+<actor name='n9XJnr_x3' type='Joiner' >
+<port type='in' name='n9XJnr_in_x0_x3' rate='1'/>
+<port type='in' name='n9XJnr_in_x1_x3' rate='1'/>
+<port type='in' name='n9XJnr_in_x2_x3' rate='1'/>
+<port type='in' name='n9XJnr_in_x3_x3' rate='1'/>
+<port type='in' name='n9XJnr_in_x4_x3' rate='1'/>
+<port type='out' name='n9XJnr_out_x3' rate='5'/>
+</actor>
+<actor name='n9XSpl_x3' type='Splitter' >
+<port type='in' name='n9XSpl_in_x3' rate='1,1,1,1,1'/>
+<port type='out' name='n9XSpl_out_x0_x3' rate='1,0,0,0,0'/>
+<port type='out' name='n9XSpl_out_x1_x3' rate='0,1,0,0,0'/>
+<port type='out' name='n9XSpl_out_x2_x3' rate='0,0,1,0,0'/>
+<port type='out' name='n9XSpl_out_x3_x3' rate='0,0,0,1,0'/>
+<port type='out' name='n9XSpl_out_x4_x3' rate='0,0,0,0,1'/>
+</actor>
+<actor name='n5_x1_x3' type='Param' >
+<port type='in' name='n5_in_x1_x3' rate='1'/>
+<port type='out' name='n5_x0_out_x1_x3' rate='1'/>
+<port type='out' name='n5_x1_out_x1_x3' rate='1'/>
+</actor>
+<actor name='n7_x1_x3' type='Get' >
+<port type='in' name='n7_in_x1_x3' rate='1'/>
+<port type='out' name='n7_out_x1_x3' rate='1'/>
+</actor>
+<actor name='n8_x1_x3' type='Get' >
+<port type='in' name='n8_in_x1_x3' rate='1'/>
+<port type='out' name='n8_out_x1_x3' rate='1'/>
+</actor>
+<actor name='n6_x1_x3' type='mult'>
+<port type='out' name='n6_out_x1_x3' rate='1'/>
+<port type='in' name='n6_x0_in_x1_x3' rate='1'/>
+<port type='in' name='n6_x1_in_x1_x3' rate='1'/>
+</actor>
+<actor name='n5_x2_x3' type='Param' >
+<port type='in' name='n5_in_x2_x3' rate='1'/>
+<port type='out' name='n5_x0_out_x2_x3' rate='1'/>
+<port type='out' name='n5_x1_out_x2_x3' rate='1'/>
+</actor>
+<actor name='n7_x2_x3' type='Get' >
+<port type='in' name='n7_in_x2_x3' rate='1'/>
+<port type='out' name='n7_out_x2_x3' rate='1'/>
+</actor>
+<actor name='n8_x2_x3' type='Get' >
+<port type='in' name='n8_in_x2_x3' rate='1'/>
+<port type='out' name='n8_out_x2_x3' rate='1'/>
+</actor>
+<actor name='n6_x2_x3' type='mult'>
+<port type='out' name='n6_out_x2_x3' rate='1'/>
+<port type='in' name='n6_x0_in_x2_x3' rate='1'/>
+<port type='in' name='n6_x1_in_x2_x3' rate='1'/>
+</actor>
+<actor name='n5_x3_x3' type='Param' >
+<port type='in' name='n5_in_x3_x3' rate='1'/>
+<port type='out' name='n5_x0_out_x3_x3' rate='1'/>
+<port type='out' name='n5_x1_out_x3_x3' rate='1'/>
+</actor>
+<actor name='n7_x3_x3' type='Get' >
+<port type='in' name='n7_in_x3_x3' rate='1'/>
+<port type='out' name='n7_out_x3_x3' rate='1'/>
+</actor>
+<actor name='n8_x3_x3' type='Get' >
+<port type='in' name='n8_in_x3_x3' rate='1'/>
+<port type='out' name='n8_out_x3_x3' rate='1'/>
+</actor>
+<actor name='n6_x3_x3' type='mult'>
+<port type='out' name='n6_out_x3_x3' rate='1'/>
+<port type='in' name='n6_x0_in_x3_x3' rate='1'/>
+<port type='in' name='n6_x1_in_x3_x3' rate='1'/>
+</actor>
+<actor name='n5_x4_x3' type='Param' >
+<port type='in' name='n5_in_x4_x3' rate='1'/>
+<port type='out' name='n5_x0_out_x4_x3' rate='1'/>
+<port type='out' name='n5_x1_out_x4_x3' rate='1'/>
+</actor>
+<actor name='n7_x4_x3' type='Get' >
+<port type='in' name='n7_in_x4_x3' rate='1'/>
+<port type='out' name='n7_out_x4_x3' rate='1'/>
+</actor>
+<actor name='n8_x4_x3' type='Get' >
+<port type='in' name='n8_in_x4_x3' rate='1'/>
+<port type='out' name='n8_out_x4_x3' rate='1'/>
+</actor>
+<actor name='n6_x4_x3' type='mult'>
+<port type='out' name='n6_out_x4_x3' rate='1'/>
+<port type='in' name='n6_x0_in_x4_x3' rate='1'/>
+<port type='in' name='n6_x1_in_x4_x3' rate='1'/>
+</actor>
+<actor name='n5_x5_x3' type='Param' >
+<port type='in' name='n5_in_x5_x3' rate='1'/>
+<port type='out' name='n5_x0_out_x5_x3' rate='1'/>
+<port type='out' name='n5_x1_out_x5_x3' rate='1'/>
+</actor>
+<actor name='n7_x5_x3' type='Get' >
+<port type='in' name='n7_in_x5_x3' rate='1'/>
+<port type='out' name='n7_out_x5_x3' rate='1'/>
+</actor>
+<actor name='n8_x5_x3' type='Get' >
+<port type='in' name='n8_in_x5_x3' rate='1'/>
+<port type='out' name='n8_out_x5_x3' rate='1'/>
+</actor>
+<actor name='n6_x5_x3' type='mult'>
+<port type='out' name='n6_out_x5_x3' rate='1'/>
+<port type='in' name='n6_x0_in_x5_x3' rate='1'/>
+<port type='in' name='n6_x1_in_x5_x3' rate='1'/>
+</actor>
+<actor name='n3_x4' type='Param' >
+<port type='in' name='n3_in_x4' rate='1'/>
+<port type='out' name='n3_x0_out_x4' rate='1'/>
+</actor>
+<actor name='n4_x4' type='Param' >
+<port type='in' name='n4_in_x4' rate='1'/>
+<port type='out' name='n4_x0_out_x4' rate='1'/>
+</actor>
+<actor name='n9XDA_x4' type='Dearray' >
+<port type='in' name='n9_in_x4' rate='1'/>
+<port type='out' name='n9XDA_out_x4' rate='5'/>
+</actor>
+<actor name='n9XRA_x4' type='Rearray' >
+<port type='in' name='n9XRA_in_x4' rate='5'/>
+<port type='out' name='n9_out_x4' rate='1'/>
+</actor>
+<actor name='n9XJnr_x4' type='Joiner' >
+<port type='in' name='n9XJnr_in_x0_x4' rate='1'/>
+<port type='in' name='n9XJnr_in_x1_x4' rate='1'/>
+<port type='in' name='n9XJnr_in_x2_x4' rate='1'/>
+<port type='in' name='n9XJnr_in_x3_x4' rate='1'/>
+<port type='in' name='n9XJnr_in_x4_x4' rate='1'/>
+<port type='out' name='n9XJnr_out_x4' rate='5'/>
+</actor>
+<actor name='n9XSpl_x4' type='Splitter' >
+<port type='in' name='n9XSpl_in_x4' rate='1,1,1,1,1'/>
+<port type='out' name='n9XSpl_out_x0_x4' rate='1,0,0,0,0'/>
+<port type='out' name='n9XSpl_out_x1_x4' rate='0,1,0,0,0'/>
+<port type='out' name='n9XSpl_out_x2_x4' rate='0,0,1,0,0'/>
+<port type='out' name='n9XSpl_out_x3_x4' rate='0,0,0,1,0'/>
+<port type='out' name='n9XSpl_out_x4_x4' rate='0,0,0,0,1'/>
+</actor>
+<actor name='n5_x1_x4' type='Param' >
+<port type='in' name='n5_in_x1_x4' rate='1'/>
+<port type='out' name='n5_x0_out_x1_x4' rate='1'/>
+<port type='out' name='n5_x1_out_x1_x4' rate='1'/>
+</actor>
+<actor name='n7_x1_x4' type='Get' >
+<port type='in' name='n7_in_x1_x4' rate='1'/>
+<port type='out' name='n7_out_x1_x4' rate='1'/>
+</actor>
+<actor name='n8_x1_x4' type='Get' >
+<port type='in' name='n8_in_x1_x4' rate='1'/>
+<port type='out' name='n8_out_x1_x4' rate='1'/>
+</actor>
+<actor name='n6_x1_x4' type='mult'>
+<port type='out' name='n6_out_x1_x4' rate='1'/>
+<port type='in' name='n6_x0_in_x1_x4' rate='1'/>
+<port type='in' name='n6_x1_in_x1_x4' rate='1'/>
+</actor>
+<actor name='n5_x2_x4' type='Param' >
+<port type='in' name='n5_in_x2_x4' rate='1'/>
+<port type='out' name='n5_x0_out_x2_x4' rate='1'/>
+<port type='out' name='n5_x1_out_x2_x4' rate='1'/>
+</actor>
+<actor name='n7_x2_x4' type='Get' >
+<port type='in' name='n7_in_x2_x4' rate='1'/>
+<port type='out' name='n7_out_x2_x4' rate='1'/>
+</actor>
+<actor name='n8_x2_x4' type='Get' >
+<port type='in' name='n8_in_x2_x4' rate='1'/>
+<port type='out' name='n8_out_x2_x4' rate='1'/>
+</actor>
+<actor name='n6_x2_x4' type='mult'>
+<port type='out' name='n6_out_x2_x4' rate='1'/>
+<port type='in' name='n6_x0_in_x2_x4' rate='1'/>
+<port type='in' name='n6_x1_in_x2_x4' rate='1'/>
+</actor>
+<actor name='n5_x3_x4' type='Param' >
+<port type='in' name='n5_in_x3_x4' rate='1'/>
+<port type='out' name='n5_x0_out_x3_x4' rate='1'/>
+<port type='out' name='n5_x1_out_x3_x4' rate='1'/>
+</actor>
+<actor name='n7_x3_x4' type='Get' >
+<port type='in' name='n7_in_x3_x4' rate='1'/>
+<port type='out' name='n7_out_x3_x4' rate='1'/>
+</actor>
+<actor name='n8_x3_x4' type='Get' >
+<port type='in' name='n8_in_x3_x4' rate='1'/>
+<port type='out' name='n8_out_x3_x4' rate='1'/>
+</actor>
+<actor name='n6_x3_x4' type='mult'>
+<port type='out' name='n6_out_x3_x4' rate='1'/>
+<port type='in' name='n6_x0_in_x3_x4' rate='1'/>
+<port type='in' name='n6_x1_in_x3_x4' rate='1'/>
+</actor>
+<actor name='n5_x4_x4' type='Param' >
+<port type='in' name='n5_in_x4_x4' rate='1'/>
+<port type='out' name='n5_x0_out_x4_x4' rate='1'/>
+<port type='out' name='n5_x1_out_x4_x4' rate='1'/>
+</actor>
+<actor name='n7_x4_x4' type='Get' >
+<port type='in' name='n7_in_x4_x4' rate='1'/>
+<port type='out' name='n7_out_x4_x4' rate='1'/>
+</actor>
+<actor name='n8_x4_x4' type='Get' >
+<port type='in' name='n8_in_x4_x4' rate='1'/>
+<port type='out' name='n8_out_x4_x4' rate='1'/>
+</actor>
+<actor name='n6_x4_x4' type='mult'>
+<port type='out' name='n6_out_x4_x4' rate='1'/>
+<port type='in' name='n6_x0_in_x4_x4' rate='1'/>
+<port type='in' name='n6_x1_in_x4_x4' rate='1'/>
+</actor>
+<actor name='n5_x5_x4' type='Param' >
+<port type='in' name='n5_in_x5_x4' rate='1'/>
+<port type='out' name='n5_x0_out_x5_x4' rate='1'/>
+<port type='out' name='n5_x1_out_x5_x4' rate='1'/>
+</actor>
+<actor name='n7_x5_x4' type='Get' >
+<port type='in' name='n7_in_x5_x4' rate='1'/>
+<port type='out' name='n7_out_x5_x4' rate='1'/>
+</actor>
+<actor name='n8_x5_x4' type='Get' >
+<port type='in' name='n8_in_x5_x4' rate='1'/>
+<port type='out' name='n8_out_x5_x4' rate='1'/>
+</actor>
+<actor name='n6_x5_x4' type='mult'>
+<port type='out' name='n6_out_x5_x4' rate='1'/>
+<port type='in' name='n6_x0_in_x5_x4' rate='1'/>
+<port type='in' name='n6_x1_in_x5_x4' rate='1'/>
+</actor>
+<actor name='n10_x0XDA_x0' type='Dearray' >
+<port type='in' name='n10_x0_in_x0' rate='1'/>
+<port type='out' name='n10_x0XDA_out_x0' rate='5'/>
+</actor>
+<actor name='n10_x0XDA_x1' type='Dearray' >
+<port type='in' name='n10_x1_in_x0' rate='1'/>
+<port type='out' name='n10_x0XDA_out_x1' rate='5'/>
+</actor>
+<actor name='n10_x0XRA' type='Rearray' >
+<port type='in' name='n10_x0XRA_in' rate='5'/>
+<port type='out' name='n10_out_x0' rate='1'/>
+</actor>
+<actor name='n10_x0XZippee' type='Zippee'>
+<port type='out' name='n10_x0XZippee_out' rate='1'/>
+<port type='in' name='n10_x0XZippee_x0_in' rate='1'/>
+<port type='in' name='n10_x0XZippee_x1_in' rate='1'/>
+</actor>
+<actor name='n10_x1XDA_x0' type='Dearray' >
+<port type='in' name='n10_x0_in_x1' rate='1'/>
+<port type='out' name='n10_x1XDA_out_x0' rate='5'/>
+</actor>
+<actor name='n10_x1XDA_x1' type='Dearray' >
+<port type='in' name='n10_x1_in_x1' rate='1'/>
+<port type='out' name='n10_x1XDA_out_x1' rate='5'/>
+</actor>
+<actor name='n10_x1XRA' type='Rearray' >
+<port type='in' name='n10_x1XRA_in' rate='5'/>
+<port type='out' name='n10_out_x1' rate='1'/>
+</actor>
+<actor name='n10_x1XZippee' type='Zippee'>
+<port type='out' name='n10_x1XZippee_out' rate='1'/>
+<port type='in' name='n10_x1XZippee_x0_in' rate='1'/>
+<port type='in' name='n10_x1XZippee_x1_in' rate='1'/>
+</actor>
+<actor name='n10_x2XDA_x0' type='Dearray' >
+<port type='in' name='n10_x0_in_x2' rate='1'/>
+<port type='out' name='n10_x2XDA_out_x0' rate='5'/>
+</actor>
+<actor name='n10_x2XDA_x1' type='Dearray' >
+<port type='in' name='n10_x1_in_x2' rate='1'/>
+<port type='out' name='n10_x2XDA_out_x1' rate='5'/>
+</actor>
+<actor name='n10_x2XRA' type='Rearray' >
+<port type='in' name='n10_x2XRA_in' rate='5'/>
+<port type='out' name='n10_out_x2' rate='1'/>
+</actor>
+<actor name='n10_x2XZippee' type='Zippee'>
+<port type='out' name='n10_x2XZippee_out' rate='1'/>
+<port type='in' name='n10_x2XZippee_x0_in' rate='1'/>
+<port type='in' name='n10_x2XZippee_x1_in' rate='1'/>
+</actor>
+<actor name='n10_x3XDA_x0' type='Dearray' >
+<port type='in' name='n10_x0_in_x3' rate='1'/>
+<port type='out' name='n10_x3XDA_out_x0' rate='5'/>
+</actor>
+<actor name='n10_x3XDA_x1' type='Dearray' >
+<port type='in' name='n10_x1_in_x3' rate='1'/>
+<port type='out' name='n10_x3XDA_out_x1' rate='5'/>
+</actor>
+<actor name='n10_x3XRA' type='Rearray' >
+<port type='in' name='n10_x3XRA_in' rate='5'/>
+<port type='out' name='n10_out_x3' rate='1'/>
+</actor>
+<actor name='n10_x3XZippee' type='Zippee'>
+<port type='out' name='n10_x3XZippee_out' rate='1'/>
+<port type='in' name='n10_x3XZippee_x0_in' rate='1'/>
+<port type='in' name='n10_x3XZippee_x1_in' rate='1'/>
+</actor>
+<actor name='n10_x4XDA_x0' type='Dearray' >
+<port type='in' name='n10_x0_in_x4' rate='1'/>
+<port type='out' name='n10_x4XDA_out_x0' rate='5'/>
+</actor>
+<actor name='n10_x4XDA_x1' type='Dearray' >
+<port type='in' name='n10_x1_in_x4' rate='1'/>
+<port type='out' name='n10_x4XDA_out_x1' rate='5'/>
+</actor>
+<actor name='n10_x4XRA' type='Rearray' >
+<port type='in' name='n10_x4XRA_in' rate='5'/>
+<port type='out' name='n10_out_x4' rate='1'/>
+</actor>
+<actor name='n10_x4XZippee' type='Zippee'>
+<port type='out' name='n10_x4XZippee_out' rate='1'/>
+<port type='in' name='n10_x4XZippee_x0_in' rate='1'/>
+<port type='in' name='n10_x4XZippee_x1_in' rate='1'/>
+</actor><channel name='n1_x0_out_to_n11_in' srcActor='n1' srcPort='n1_x0_out' dstActor='n11XDA' dstPort='n11_in' size='100' dtype='Array (5, Array (5, Float))' initialTokens='0'/>
+<channel name='n11XDA_out_to_n11XSpl_in' srcActor='n11XDA' srcPort='n11XDA_out' dstActor='n11XSpl' dstPort='n11XSpl_in' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n3_x0_out_to_n10_x0_in_x0' srcActor='n3_x0' srcPort='n3_x0_out_x0' dstActor='n10_x0XDA_x0' dstPort='n10_x0_in_x0' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n4_x0_out_to_n10_x1_in_x0' srcActor='n4_x0' srcPort='n4_x0_out_x0' dstActor='n10_x0XDA_x1' dstPort='n10_x1_in_x0' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n10_out_to_n9_in_x0' srcActor='n10_x0XRA' srcPort='n10_out_x0' dstActor='n9XDA_x0' dstPort='n9_in_x0' size='40' dtype='Array (5, Tuple (Float, Float))' initialTokens='0'/>
+<channel name='n9XDA_out_to_n9XSpl_in_x0' srcActor='n9XDA_x0' srcPort='n9XDA_out_x0' dstActor='n9XSpl_x0' dstPort='n9XSpl_in_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n9XJnr_out_to_n9XRA_in_x0' srcActor='n9XJnr_x0' srcPort='n9XJnr_out_x0' dstActor='n9XRA_x0' dstPort='n9XRA_in_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x0_to_n5_in_x1_x0' srcActor='n9XSpl_x0' srcPort='n9XSpl_out_x0_x0' dstActor='n5_x1_x0' dstPort='n5_in_x1_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x1_to_n9XJnr_in_x0_x0' srcActor='n6_x1_x0' srcPort='n6_out_x1_x0' dstActor='n9XJnr_x0' dstPort='n9XJnr_in_x0_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x1_x0' srcActor='n5_x1_x0' srcPort='n5_x0_out_x1_x0' dstActor='n7_x1_x0' dstPort='n7_in_x1_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x1_x0' srcActor='n7_x1_x0' srcPort='n7_out_x1_x0' dstActor='n6_x1_x0' dstPort='n6_x0_in_x1_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x1_x0' srcActor='n5_x1_x0' srcPort='n5_x1_out_x1_x0' dstActor='n8_x1_x0' dstPort='n8_in_x1_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x1_x0' srcActor='n8_x1_x0' srcPort='n8_out_x1_x0' dstActor='n6_x1_x0' dstPort='n6_x1_in_x1_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x1_to_n5_in_x2_x0' srcActor='n9XSpl_x0' srcPort='n9XSpl_out_x1_x0' dstActor='n5_x2_x0' dstPort='n5_in_x2_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x2_to_n9XJnr_in_x1_x0' srcActor='n6_x2_x0' srcPort='n6_out_x2_x0' dstActor='n9XJnr_x0' dstPort='n9XJnr_in_x1_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x2_x0' srcActor='n5_x2_x0' srcPort='n5_x0_out_x2_x0' dstActor='n7_x2_x0' dstPort='n7_in_x2_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x2_x0' srcActor='n7_x2_x0' srcPort='n7_out_x2_x0' dstActor='n6_x2_x0' dstPort='n6_x0_in_x2_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x2_x0' srcActor='n5_x2_x0' srcPort='n5_x1_out_x2_x0' dstActor='n8_x2_x0' dstPort='n8_in_x2_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x2_x0' srcActor='n8_x2_x0' srcPort='n8_out_x2_x0' dstActor='n6_x2_x0' dstPort='n6_x1_in_x2_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x2_to_n5_in_x3_x0' srcActor='n9XSpl_x0' srcPort='n9XSpl_out_x2_x0' dstActor='n5_x3_x0' dstPort='n5_in_x3_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x3_to_n9XJnr_in_x2_x0' srcActor='n6_x3_x0' srcPort='n6_out_x3_x0' dstActor='n9XJnr_x0' dstPort='n9XJnr_in_x2_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x3_x0' srcActor='n5_x3_x0' srcPort='n5_x0_out_x3_x0' dstActor='n7_x3_x0' dstPort='n7_in_x3_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x3_x0' srcActor='n7_x3_x0' srcPort='n7_out_x3_x0' dstActor='n6_x3_x0' dstPort='n6_x0_in_x3_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x3_x0' srcActor='n5_x3_x0' srcPort='n5_x1_out_x3_x0' dstActor='n8_x3_x0' dstPort='n8_in_x3_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x3_x0' srcActor='n8_x3_x0' srcPort='n8_out_x3_x0' dstActor='n6_x3_x0' dstPort='n6_x1_in_x3_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x3_to_n5_in_x4_x0' srcActor='n9XSpl_x0' srcPort='n9XSpl_out_x3_x0' dstActor='n5_x4_x0' dstPort='n5_in_x4_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x4_to_n9XJnr_in_x3_x0' srcActor='n6_x4_x0' srcPort='n6_out_x4_x0' dstActor='n9XJnr_x0' dstPort='n9XJnr_in_x3_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x4_x0' srcActor='n5_x4_x0' srcPort='n5_x0_out_x4_x0' dstActor='n7_x4_x0' dstPort='n7_in_x4_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x4_x0' srcActor='n7_x4_x0' srcPort='n7_out_x4_x0' dstActor='n6_x4_x0' dstPort='n6_x0_in_x4_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x4_x0' srcActor='n5_x4_x0' srcPort='n5_x1_out_x4_x0' dstActor='n8_x4_x0' dstPort='n8_in_x4_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x4_x0' srcActor='n8_x4_x0' srcPort='n8_out_x4_x0' dstActor='n6_x4_x0' dstPort='n6_x1_in_x4_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x4_to_n5_in_x5_x0' srcActor='n9XSpl_x0' srcPort='n9XSpl_out_x4_x0' dstActor='n5_x5_x0' dstPort='n5_in_x5_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x5_to_n9XJnr_in_x4_x0' srcActor='n6_x5_x0' srcPort='n6_out_x5_x0' dstActor='n9XJnr_x0' dstPort='n9XJnr_in_x4_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x5_x0' srcActor='n5_x5_x0' srcPort='n5_x0_out_x5_x0' dstActor='n7_x5_x0' dstPort='n7_in_x5_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x5_x0' srcActor='n7_x5_x0' srcPort='n7_out_x5_x0' dstActor='n6_x5_x0' dstPort='n6_x0_in_x5_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x5_x0' srcActor='n5_x5_x0' srcPort='n5_x1_out_x5_x0' dstActor='n8_x5_x0' dstPort='n8_in_x5_x0' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x5_x0' srcActor='n8_x5_x0' srcPort='n8_out_x5_x0' dstActor='n6_x5_x0' dstPort='n6_x1_in_x5_x0' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n11XSpl_out_x0_to_n3_in_x0' srcActor='n11XSpl' srcPort='n11XSpl_out_x0' dstActor='n3_x0' dstPort='n3_in_x0' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n11XSpl_out_x1_to_n4_in_x0' srcActor='n11XSpl' srcPort='n11XSpl_out_x1' dstActor='n4_x0' dstPort='n4_in_x0' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n3_x0_out_to_n10_x0_in_x1' srcActor='n3_x1' srcPort='n3_x0_out_x1' dstActor='n10_x1XDA_x0' dstPort='n10_x0_in_x1' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n4_x0_out_to_n10_x1_in_x1' srcActor='n4_x1' srcPort='n4_x0_out_x1' dstActor='n10_x1XDA_x1' dstPort='n10_x1_in_x1' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n10_out_to_n9_in_x1' srcActor='n10_x1XRA' srcPort='n10_out_x1' dstActor='n9XDA_x1' dstPort='n9_in_x1' size='40' dtype='Array (5, Tuple (Float, Float))' initialTokens='0'/>
+<channel name='n9XDA_out_to_n9XSpl_in_x1' srcActor='n9XDA_x1' srcPort='n9XDA_out_x1' dstActor='n9XSpl_x1' dstPort='n9XSpl_in_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n9XJnr_out_to_n9XRA_in_x1' srcActor='n9XJnr_x1' srcPort='n9XJnr_out_x1' dstActor='n9XRA_x1' dstPort='n9XRA_in_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x0_to_n5_in_x1_x1' srcActor='n9XSpl_x1' srcPort='n9XSpl_out_x0_x1' dstActor='n5_x1_x1' dstPort='n5_in_x1_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x1_to_n9XJnr_in_x0_x1' srcActor='n6_x1_x1' srcPort='n6_out_x1_x1' dstActor='n9XJnr_x1' dstPort='n9XJnr_in_x0_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x1_x1' srcActor='n5_x1_x1' srcPort='n5_x0_out_x1_x1' dstActor='n7_x1_x1' dstPort='n7_in_x1_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x1_x1' srcActor='n7_x1_x1' srcPort='n7_out_x1_x1' dstActor='n6_x1_x1' dstPort='n6_x0_in_x1_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x1_x1' srcActor='n5_x1_x1' srcPort='n5_x1_out_x1_x1' dstActor='n8_x1_x1' dstPort='n8_in_x1_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x1_x1' srcActor='n8_x1_x1' srcPort='n8_out_x1_x1' dstActor='n6_x1_x1' dstPort='n6_x1_in_x1_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x1_to_n5_in_x2_x1' srcActor='n9XSpl_x1' srcPort='n9XSpl_out_x1_x1' dstActor='n5_x2_x1' dstPort='n5_in_x2_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x2_to_n9XJnr_in_x1_x1' srcActor='n6_x2_x1' srcPort='n6_out_x2_x1' dstActor='n9XJnr_x1' dstPort='n9XJnr_in_x1_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x2_x1' srcActor='n5_x2_x1' srcPort='n5_x0_out_x2_x1' dstActor='n7_x2_x1' dstPort='n7_in_x2_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x2_x1' srcActor='n7_x2_x1' srcPort='n7_out_x2_x1' dstActor='n6_x2_x1' dstPort='n6_x0_in_x2_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x2_x1' srcActor='n5_x2_x1' srcPort='n5_x1_out_x2_x1' dstActor='n8_x2_x1' dstPort='n8_in_x2_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x2_x1' srcActor='n8_x2_x1' srcPort='n8_out_x2_x1' dstActor='n6_x2_x1' dstPort='n6_x1_in_x2_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x2_to_n5_in_x3_x1' srcActor='n9XSpl_x1' srcPort='n9XSpl_out_x2_x1' dstActor='n5_x3_x1' dstPort='n5_in_x3_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x3_to_n9XJnr_in_x2_x1' srcActor='n6_x3_x1' srcPort='n6_out_x3_x1' dstActor='n9XJnr_x1' dstPort='n9XJnr_in_x2_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x3_x1' srcActor='n5_x3_x1' srcPort='n5_x0_out_x3_x1' dstActor='n7_x3_x1' dstPort='n7_in_x3_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x3_x1' srcActor='n7_x3_x1' srcPort='n7_out_x3_x1' dstActor='n6_x3_x1' dstPort='n6_x0_in_x3_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x3_x1' srcActor='n5_x3_x1' srcPort='n5_x1_out_x3_x1' dstActor='n8_x3_x1' dstPort='n8_in_x3_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x3_x1' srcActor='n8_x3_x1' srcPort='n8_out_x3_x1' dstActor='n6_x3_x1' dstPort='n6_x1_in_x3_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x3_to_n5_in_x4_x1' srcActor='n9XSpl_x1' srcPort='n9XSpl_out_x3_x1' dstActor='n5_x4_x1' dstPort='n5_in_x4_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x4_to_n9XJnr_in_x3_x1' srcActor='n6_x4_x1' srcPort='n6_out_x4_x1' dstActor='n9XJnr_x1' dstPort='n9XJnr_in_x3_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x4_x1' srcActor='n5_x4_x1' srcPort='n5_x0_out_x4_x1' dstActor='n7_x4_x1' dstPort='n7_in_x4_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x4_x1' srcActor='n7_x4_x1' srcPort='n7_out_x4_x1' dstActor='n6_x4_x1' dstPort='n6_x0_in_x4_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x4_x1' srcActor='n5_x4_x1' srcPort='n5_x1_out_x4_x1' dstActor='n8_x4_x1' dstPort='n8_in_x4_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x4_x1' srcActor='n8_x4_x1' srcPort='n8_out_x4_x1' dstActor='n6_x4_x1' dstPort='n6_x1_in_x4_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x4_to_n5_in_x5_x1' srcActor='n9XSpl_x1' srcPort='n9XSpl_out_x4_x1' dstActor='n5_x5_x1' dstPort='n5_in_x5_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x5_to_n9XJnr_in_x4_x1' srcActor='n6_x5_x1' srcPort='n6_out_x5_x1' dstActor='n9XJnr_x1' dstPort='n9XJnr_in_x4_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x5_x1' srcActor='n5_x5_x1' srcPort='n5_x0_out_x5_x1' dstActor='n7_x5_x1' dstPort='n7_in_x5_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x5_x1' srcActor='n7_x5_x1' srcPort='n7_out_x5_x1' dstActor='n6_x5_x1' dstPort='n6_x0_in_x5_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x5_x1' srcActor='n5_x5_x1' srcPort='n5_x1_out_x5_x1' dstActor='n8_x5_x1' dstPort='n8_in_x5_x1' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x5_x1' srcActor='n8_x5_x1' srcPort='n8_out_x5_x1' dstActor='n6_x5_x1' dstPort='n6_x1_in_x5_x1' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n11XSpl_out_x2_to_n3_in_x1' srcActor='n11XSpl' srcPort='n11XSpl_out_x2' dstActor='n3_x1' dstPort='n3_in_x1' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n11XSpl_out_x3_to_n4_in_x1' srcActor='n11XSpl' srcPort='n11XSpl_out_x3' dstActor='n4_x1' dstPort='n4_in_x1' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n3_x0_out_to_n10_x0_in_x2' srcActor='n3_x2' srcPort='n3_x0_out_x2' dstActor='n10_x2XDA_x0' dstPort='n10_x0_in_x2' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n4_x0_out_to_n10_x1_in_x2' srcActor='n4_x2' srcPort='n4_x0_out_x2' dstActor='n10_x2XDA_x1' dstPort='n10_x1_in_x2' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n10_out_to_n9_in_x2' srcActor='n10_x2XRA' srcPort='n10_out_x2' dstActor='n9XDA_x2' dstPort='n9_in_x2' size='40' dtype='Array (5, Tuple (Float, Float))' initialTokens='0'/>
+<channel name='n9XDA_out_to_n9XSpl_in_x2' srcActor='n9XDA_x2' srcPort='n9XDA_out_x2' dstActor='n9XSpl_x2' dstPort='n9XSpl_in_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n9XJnr_out_to_n9XRA_in_x2' srcActor='n9XJnr_x2' srcPort='n9XJnr_out_x2' dstActor='n9XRA_x2' dstPort='n9XRA_in_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x0_to_n5_in_x1_x2' srcActor='n9XSpl_x2' srcPort='n9XSpl_out_x0_x2' dstActor='n5_x1_x2' dstPort='n5_in_x1_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x1_to_n9XJnr_in_x0_x2' srcActor='n6_x1_x2' srcPort='n6_out_x1_x2' dstActor='n9XJnr_x2' dstPort='n9XJnr_in_x0_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x1_x2' srcActor='n5_x1_x2' srcPort='n5_x0_out_x1_x2' dstActor='n7_x1_x2' dstPort='n7_in_x1_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x1_x2' srcActor='n7_x1_x2' srcPort='n7_out_x1_x2' dstActor='n6_x1_x2' dstPort='n6_x0_in_x1_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x1_x2' srcActor='n5_x1_x2' srcPort='n5_x1_out_x1_x2' dstActor='n8_x1_x2' dstPort='n8_in_x1_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x1_x2' srcActor='n8_x1_x2' srcPort='n8_out_x1_x2' dstActor='n6_x1_x2' dstPort='n6_x1_in_x1_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x1_to_n5_in_x2_x2' srcActor='n9XSpl_x2' srcPort='n9XSpl_out_x1_x2' dstActor='n5_x2_x2' dstPort='n5_in_x2_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x2_to_n9XJnr_in_x1_x2' srcActor='n6_x2_x2' srcPort='n6_out_x2_x2' dstActor='n9XJnr_x2' dstPort='n9XJnr_in_x1_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x2_x2' srcActor='n5_x2_x2' srcPort='n5_x0_out_x2_x2' dstActor='n7_x2_x2' dstPort='n7_in_x2_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x2_x2' srcActor='n7_x2_x2' srcPort='n7_out_x2_x2' dstActor='n6_x2_x2' dstPort='n6_x0_in_x2_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x2_x2' srcActor='n5_x2_x2' srcPort='n5_x1_out_x2_x2' dstActor='n8_x2_x2' dstPort='n8_in_x2_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x2_x2' srcActor='n8_x2_x2' srcPort='n8_out_x2_x2' dstActor='n6_x2_x2' dstPort='n6_x1_in_x2_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x2_to_n5_in_x3_x2' srcActor='n9XSpl_x2' srcPort='n9XSpl_out_x2_x2' dstActor='n5_x3_x2' dstPort='n5_in_x3_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x3_to_n9XJnr_in_x2_x2' srcActor='n6_x3_x2' srcPort='n6_out_x3_x2' dstActor='n9XJnr_x2' dstPort='n9XJnr_in_x2_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x3_x2' srcActor='n5_x3_x2' srcPort='n5_x0_out_x3_x2' dstActor='n7_x3_x2' dstPort='n7_in_x3_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x3_x2' srcActor='n7_x3_x2' srcPort='n7_out_x3_x2' dstActor='n6_x3_x2' dstPort='n6_x0_in_x3_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x3_x2' srcActor='n5_x3_x2' srcPort='n5_x1_out_x3_x2' dstActor='n8_x3_x2' dstPort='n8_in_x3_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x3_x2' srcActor='n8_x3_x2' srcPort='n8_out_x3_x2' dstActor='n6_x3_x2' dstPort='n6_x1_in_x3_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x3_to_n5_in_x4_x2' srcActor='n9XSpl_x2' srcPort='n9XSpl_out_x3_x2' dstActor='n5_x4_x2' dstPort='n5_in_x4_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x4_to_n9XJnr_in_x3_x2' srcActor='n6_x4_x2' srcPort='n6_out_x4_x2' dstActor='n9XJnr_x2' dstPort='n9XJnr_in_x3_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x4_x2' srcActor='n5_x4_x2' srcPort='n5_x0_out_x4_x2' dstActor='n7_x4_x2' dstPort='n7_in_x4_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x4_x2' srcActor='n7_x4_x2' srcPort='n7_out_x4_x2' dstActor='n6_x4_x2' dstPort='n6_x0_in_x4_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x4_x2' srcActor='n5_x4_x2' srcPort='n5_x1_out_x4_x2' dstActor='n8_x4_x2' dstPort='n8_in_x4_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x4_x2' srcActor='n8_x4_x2' srcPort='n8_out_x4_x2' dstActor='n6_x4_x2' dstPort='n6_x1_in_x4_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x4_to_n5_in_x5_x2' srcActor='n9XSpl_x2' srcPort='n9XSpl_out_x4_x2' dstActor='n5_x5_x2' dstPort='n5_in_x5_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x5_to_n9XJnr_in_x4_x2' srcActor='n6_x5_x2' srcPort='n6_out_x5_x2' dstActor='n9XJnr_x2' dstPort='n9XJnr_in_x4_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x5_x2' srcActor='n5_x5_x2' srcPort='n5_x0_out_x5_x2' dstActor='n7_x5_x2' dstPort='n7_in_x5_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x5_x2' srcActor='n7_x5_x2' srcPort='n7_out_x5_x2' dstActor='n6_x5_x2' dstPort='n6_x0_in_x5_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x5_x2' srcActor='n5_x5_x2' srcPort='n5_x1_out_x5_x2' dstActor='n8_x5_x2' dstPort='n8_in_x5_x2' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x5_x2' srcActor='n8_x5_x2' srcPort='n8_out_x5_x2' dstActor='n6_x5_x2' dstPort='n6_x1_in_x5_x2' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n11XSpl_out_x4_to_n3_in_x2' srcActor='n11XSpl' srcPort='n11XSpl_out_x4' dstActor='n3_x2' dstPort='n3_in_x2' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n11XInitVal_out_to_n4_in_x2' srcActor='n11XInitVal' srcPort='n11XInitVal_out' dstActor='n4_x2' dstPort='n4_in_x2' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n3_x0_out_to_n10_x0_in_x3' srcActor='n3_x3' srcPort='n3_x0_out_x3' dstActor='n10_x3XDA_x0' dstPort='n10_x0_in_x3' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n4_x0_out_to_n10_x1_in_x3' srcActor='n4_x3' srcPort='n4_x0_out_x3' dstActor='n10_x3XDA_x1' dstPort='n10_x1_in_x3' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n10_out_to_n9_in_x3' srcActor='n10_x3XRA' srcPort='n10_out_x3' dstActor='n9XDA_x3' dstPort='n9_in_x3' size='40' dtype='Array (5, Tuple (Float, Float))' initialTokens='0'/>
+<channel name='n9XDA_out_to_n9XSpl_in_x3' srcActor='n9XDA_x3' srcPort='n9XDA_out_x3' dstActor='n9XSpl_x3' dstPort='n9XSpl_in_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n9XJnr_out_to_n9XRA_in_x3' srcActor='n9XJnr_x3' srcPort='n9XJnr_out_x3' dstActor='n9XRA_x3' dstPort='n9XRA_in_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x0_to_n5_in_x1_x3' srcActor='n9XSpl_x3' srcPort='n9XSpl_out_x0_x3' dstActor='n5_x1_x3' dstPort='n5_in_x1_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x1_to_n9XJnr_in_x0_x3' srcActor='n6_x1_x3' srcPort='n6_out_x1_x3' dstActor='n9XJnr_x3' dstPort='n9XJnr_in_x0_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x1_x3' srcActor='n5_x1_x3' srcPort='n5_x0_out_x1_x3' dstActor='n7_x1_x3' dstPort='n7_in_x1_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x1_x3' srcActor='n7_x1_x3' srcPort='n7_out_x1_x3' dstActor='n6_x1_x3' dstPort='n6_x0_in_x1_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x1_x3' srcActor='n5_x1_x3' srcPort='n5_x1_out_x1_x3' dstActor='n8_x1_x3' dstPort='n8_in_x1_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x1_x3' srcActor='n8_x1_x3' srcPort='n8_out_x1_x3' dstActor='n6_x1_x3' dstPort='n6_x1_in_x1_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x1_to_n5_in_x2_x3' srcActor='n9XSpl_x3' srcPort='n9XSpl_out_x1_x3' dstActor='n5_x2_x3' dstPort='n5_in_x2_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x2_to_n9XJnr_in_x1_x3' srcActor='n6_x2_x3' srcPort='n6_out_x2_x3' dstActor='n9XJnr_x3' dstPort='n9XJnr_in_x1_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x2_x3' srcActor='n5_x2_x3' srcPort='n5_x0_out_x2_x3' dstActor='n7_x2_x3' dstPort='n7_in_x2_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x2_x3' srcActor='n7_x2_x3' srcPort='n7_out_x2_x3' dstActor='n6_x2_x3' dstPort='n6_x0_in_x2_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x2_x3' srcActor='n5_x2_x3' srcPort='n5_x1_out_x2_x3' dstActor='n8_x2_x3' dstPort='n8_in_x2_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x2_x3' srcActor='n8_x2_x3' srcPort='n8_out_x2_x3' dstActor='n6_x2_x3' dstPort='n6_x1_in_x2_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x2_to_n5_in_x3_x3' srcActor='n9XSpl_x3' srcPort='n9XSpl_out_x2_x3' dstActor='n5_x3_x3' dstPort='n5_in_x3_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x3_to_n9XJnr_in_x2_x3' srcActor='n6_x3_x3' srcPort='n6_out_x3_x3' dstActor='n9XJnr_x3' dstPort='n9XJnr_in_x2_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x3_x3' srcActor='n5_x3_x3' srcPort='n5_x0_out_x3_x3' dstActor='n7_x3_x3' dstPort='n7_in_x3_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x3_x3' srcActor='n7_x3_x3' srcPort='n7_out_x3_x3' dstActor='n6_x3_x3' dstPort='n6_x0_in_x3_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x3_x3' srcActor='n5_x3_x3' srcPort='n5_x1_out_x3_x3' dstActor='n8_x3_x3' dstPort='n8_in_x3_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x3_x3' srcActor='n8_x3_x3' srcPort='n8_out_x3_x3' dstActor='n6_x3_x3' dstPort='n6_x1_in_x3_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x3_to_n5_in_x4_x3' srcActor='n9XSpl_x3' srcPort='n9XSpl_out_x3_x3' dstActor='n5_x4_x3' dstPort='n5_in_x4_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x4_to_n9XJnr_in_x3_x3' srcActor='n6_x4_x3' srcPort='n6_out_x4_x3' dstActor='n9XJnr_x3' dstPort='n9XJnr_in_x3_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x4_x3' srcActor='n5_x4_x3' srcPort='n5_x0_out_x4_x3' dstActor='n7_x4_x3' dstPort='n7_in_x4_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x4_x3' srcActor='n7_x4_x3' srcPort='n7_out_x4_x3' dstActor='n6_x4_x3' dstPort='n6_x0_in_x4_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x4_x3' srcActor='n5_x4_x3' srcPort='n5_x1_out_x4_x3' dstActor='n8_x4_x3' dstPort='n8_in_x4_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x4_x3' srcActor='n8_x4_x3' srcPort='n8_out_x4_x3' dstActor='n6_x4_x3' dstPort='n6_x1_in_x4_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x4_to_n5_in_x5_x3' srcActor='n9XSpl_x3' srcPort='n9XSpl_out_x4_x3' dstActor='n5_x5_x3' dstPort='n5_in_x5_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x5_to_n9XJnr_in_x4_x3' srcActor='n6_x5_x3' srcPort='n6_out_x5_x3' dstActor='n9XJnr_x3' dstPort='n9XJnr_in_x4_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x5_x3' srcActor='n5_x5_x3' srcPort='n5_x0_out_x5_x3' dstActor='n7_x5_x3' dstPort='n7_in_x5_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x5_x3' srcActor='n7_x5_x3' srcPort='n7_out_x5_x3' dstActor='n6_x5_x3' dstPort='n6_x0_in_x5_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x5_x3' srcActor='n5_x5_x3' srcPort='n5_x1_out_x5_x3' dstActor='n8_x5_x3' dstPort='n8_in_x5_x3' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x5_x3' srcActor='n8_x5_x3' srcPort='n8_out_x5_x3' dstActor='n6_x5_x3' dstPort='n6_x1_in_x5_x3' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9_out_x0_to_n3_in_x3' srcActor='n9XRA_x0' srcPort='n9_out_x0' dstActor='n3_x3' dstPort='n3_in_x3' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n9_out_x1_to_n4_in_x3' srcActor='n9XRA_x1' srcPort='n9_out_x1' dstActor='n4_x3' dstPort='n4_in_x3' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n3_x0_out_to_n10_x0_in_x4' srcActor='n3_x4' srcPort='n3_x0_out_x4' dstActor='n10_x4XDA_x0' dstPort='n10_x0_in_x4' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n4_x0_out_to_n10_x1_in_x4' srcActor='n4_x4' srcPort='n4_x0_out_x4' dstActor='n10_x4XDA_x1' dstPort='n10_x1_in_x4' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n10_out_to_n9_in_x4' srcActor='n10_x4XRA' srcPort='n10_out_x4' dstActor='n9XDA_x4' dstPort='n9_in_x4' size='40' dtype='Array (5, Tuple (Float, Float))' initialTokens='0'/>
+<channel name='n9XDA_out_to_n9XSpl_in_x4' srcActor='n9XDA_x4' srcPort='n9XDA_out_x4' dstActor='n9XSpl_x4' dstPort='n9XSpl_in_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n9XJnr_out_to_n9XRA_in_x4' srcActor='n9XJnr_x4' srcPort='n9XJnr_out_x4' dstActor='n9XRA_x4' dstPort='n9XRA_in_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x0_to_n5_in_x1_x4' srcActor='n9XSpl_x4' srcPort='n9XSpl_out_x0_x4' dstActor='n5_x1_x4' dstPort='n5_in_x1_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x1_to_n9XJnr_in_x0_x4' srcActor='n6_x1_x4' srcPort='n6_out_x1_x4' dstActor='n9XJnr_x4' dstPort='n9XJnr_in_x0_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x1_x4' srcActor='n5_x1_x4' srcPort='n5_x0_out_x1_x4' dstActor='n7_x1_x4' dstPort='n7_in_x1_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x1_x4' srcActor='n7_x1_x4' srcPort='n7_out_x1_x4' dstActor='n6_x1_x4' dstPort='n6_x0_in_x1_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x1_x4' srcActor='n5_x1_x4' srcPort='n5_x1_out_x1_x4' dstActor='n8_x1_x4' dstPort='n8_in_x1_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x1_x4' srcActor='n8_x1_x4' srcPort='n8_out_x1_x4' dstActor='n6_x1_x4' dstPort='n6_x1_in_x1_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x1_to_n5_in_x2_x4' srcActor='n9XSpl_x4' srcPort='n9XSpl_out_x1_x4' dstActor='n5_x2_x4' dstPort='n5_in_x2_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x2_to_n9XJnr_in_x1_x4' srcActor='n6_x2_x4' srcPort='n6_out_x2_x4' dstActor='n9XJnr_x4' dstPort='n9XJnr_in_x1_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x2_x4' srcActor='n5_x2_x4' srcPort='n5_x0_out_x2_x4' dstActor='n7_x2_x4' dstPort='n7_in_x2_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x2_x4' srcActor='n7_x2_x4' srcPort='n7_out_x2_x4' dstActor='n6_x2_x4' dstPort='n6_x0_in_x2_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x2_x4' srcActor='n5_x2_x4' srcPort='n5_x1_out_x2_x4' dstActor='n8_x2_x4' dstPort='n8_in_x2_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x2_x4' srcActor='n8_x2_x4' srcPort='n8_out_x2_x4' dstActor='n6_x2_x4' dstPort='n6_x1_in_x2_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x2_to_n5_in_x3_x4' srcActor='n9XSpl_x4' srcPort='n9XSpl_out_x2_x4' dstActor='n5_x3_x4' dstPort='n5_in_x3_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x3_to_n9XJnr_in_x2_x4' srcActor='n6_x3_x4' srcPort='n6_out_x3_x4' dstActor='n9XJnr_x4' dstPort='n9XJnr_in_x2_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x3_x4' srcActor='n5_x3_x4' srcPort='n5_x0_out_x3_x4' dstActor='n7_x3_x4' dstPort='n7_in_x3_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x3_x4' srcActor='n7_x3_x4' srcPort='n7_out_x3_x4' dstActor='n6_x3_x4' dstPort='n6_x0_in_x3_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x3_x4' srcActor='n5_x3_x4' srcPort='n5_x1_out_x3_x4' dstActor='n8_x3_x4' dstPort='n8_in_x3_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x3_x4' srcActor='n8_x3_x4' srcPort='n8_out_x3_x4' dstActor='n6_x3_x4' dstPort='n6_x1_in_x3_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x3_to_n5_in_x4_x4' srcActor='n9XSpl_x4' srcPort='n9XSpl_out_x3_x4' dstActor='n5_x4_x4' dstPort='n5_in_x4_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x4_to_n9XJnr_in_x3_x4' srcActor='n6_x4_x4' srcPort='n6_out_x4_x4' dstActor='n9XJnr_x4' dstPort='n9XJnr_in_x3_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x4_x4' srcActor='n5_x4_x4' srcPort='n5_x0_out_x4_x4' dstActor='n7_x4_x4' dstPort='n7_in_x4_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x4_x4' srcActor='n7_x4_x4' srcPort='n7_out_x4_x4' dstActor='n6_x4_x4' dstPort='n6_x0_in_x4_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x4_x4' srcActor='n5_x4_x4' srcPort='n5_x1_out_x4_x4' dstActor='n8_x4_x4' dstPort='n8_in_x4_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x4_x4' srcActor='n8_x4_x4' srcPort='n8_out_x4_x4' dstActor='n6_x4_x4' dstPort='n6_x1_in_x4_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9XSpl_out_x4_to_n5_in_x5_x4' srcActor='n9XSpl_x4' srcPort='n9XSpl_out_x4_x4' dstActor='n5_x5_x4' dstPort='n5_in_x5_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n6_out_x5_to_n9XJnr_in_x4_x4' srcActor='n6_x5_x4' srcPort='n6_out_x5_x4' dstActor='n9XJnr_x4' dstPort='n9XJnr_in_x4_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x0_out_to_n7_in_x5_x4' srcActor='n5_x5_x4' srcPort='n5_x0_out_x5_x4' dstActor='n7_x5_x4' dstPort='n7_in_x5_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n7_out_to_n6_x0_in_x5_x4' srcActor='n7_x5_x4' srcPort='n7_out_x5_x4' dstActor='n6_x5_x4' dstPort='n6_x0_in_x5_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n5_x1_out_to_n8_in_x5_x4' srcActor='n5_x5_x4' srcPort='n5_x1_out_x5_x4' dstActor='n8_x5_x4' dstPort='n8_in_x5_x4' size='8' dtype='Tuple (Float, Float)' initialTokens='0'/>
+<channel name='n8_out_to_n6_x1_in_x5_x4' srcActor='n8_x5_x4' srcPort='n8_out_x5_x4' dstActor='n6_x5_x4' dstPort='n6_x1_in_x5_x4' size='4' dtype='Float' initialTokens='0'/>
+<channel name='n9_out_x2_to_n3_in_x4' srcActor='n9XRA_x2' srcPort='n9_out_x2' dstActor='n3_x4' dstPort='n3_in_x4' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n9_out_x3_to_n4_in_x4' srcActor='n9XRA_x3' srcPort='n9_out_x3' dstActor='n4_x4' dstPort='n4_in_x4' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n9_out_x4_to_n11XRA_in' srcActor='n9XRA_x4' srcPort='n9_out_x4' dstActor='n11XRA' dstPort='n11XRA_in' size='20' dtype='Array (5, Float)' initialTokens='0'/>
+<channel name='n10_x0XDA_out_x0_to_n10_x0XZippee_x0_in' srcActor='n10_x0XDA_x0' srcPort='n10_x0XDA_out_x0' dstActor='n10_x0XZippee' dstPort='n10_x0XZippee_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x0XDA_out_x1_to_n10_x0XZippee_x1_in' srcActor='n10_x0XDA_x1' srcPort='n10_x0XDA_out_x1' dstActor='n10_x0XZippee' dstPort='n10_x0XZippee_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x0XZippee_out_to_n10_x0XRA_in' srcActor='n10_x0XZippee' srcPort='n10_x0XZippee_out' dstActor='n10_x0XRA' dstPort='n10_x0XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x1XDA_out_x0_to_n10_x1XZippee_x0_in' srcActor='n10_x1XDA_x0' srcPort='n10_x1XDA_out_x0' dstActor='n10_x1XZippee' dstPort='n10_x1XZippee_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x1XDA_out_x1_to_n10_x1XZippee_x1_in' srcActor='n10_x1XDA_x1' srcPort='n10_x1XDA_out_x1' dstActor='n10_x1XZippee' dstPort='n10_x1XZippee_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x1XZippee_out_to_n10_x1XRA_in' srcActor='n10_x1XZippee' srcPort='n10_x1XZippee_out' dstActor='n10_x1XRA' dstPort='n10_x1XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x2XDA_out_x0_to_n10_x2XZippee_x0_in' srcActor='n10_x2XDA_x0' srcPort='n10_x2XDA_out_x0' dstActor='n10_x2XZippee' dstPort='n10_x2XZippee_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x2XDA_out_x1_to_n10_x2XZippee_x1_in' srcActor='n10_x2XDA_x1' srcPort='n10_x2XDA_out_x1' dstActor='n10_x2XZippee' dstPort='n10_x2XZippee_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x2XZippee_out_to_n10_x2XRA_in' srcActor='n10_x2XZippee' srcPort='n10_x2XZippee_out' dstActor='n10_x2XRA' dstPort='n10_x2XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x3XDA_out_x0_to_n10_x3XZippee_x0_in' srcActor='n10_x3XDA_x0' srcPort='n10_x3XDA_out_x0' dstActor='n10_x3XZippee' dstPort='n10_x3XZippee_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x3XDA_out_x1_to_n10_x3XZippee_x1_in' srcActor='n10_x3XDA_x1' srcPort='n10_x3XDA_out_x1' dstActor='n10_x3XZippee' dstPort='n10_x3XZippee_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x3XZippee_out_to_n10_x3XRA_in' srcActor='n10_x3XZippee' srcPort='n10_x3XZippee_out' dstActor='n10_x3XRA' dstPort='n10_x3XRA_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x4XDA_out_x0_to_n10_x4XZippee_x0_in' srcActor='n10_x4XDA_x0' srcPort='n10_x4XDA_out_x0' dstActor='n10_x4XZippee' dstPort='n10_x4XZippee_x0_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x4XDA_out_x1_to_n10_x4XZippee_x1_in' srcActor='n10_x4XDA_x1' srcPort='n10_x4XDA_out_x1' dstActor='n10_x4XZippee' dstPort='n10_x4XZippee_x1_in' size='1' dtype='False' initialTokens='0'/>
+<channel name='n10_x4XZippee_out_to_n10_x4XRA_in' srcActor='n10_x4XZippee' srcPort='n10_x4XZippee_out' dstActor='n10_x4XRA' dstPort='n10_x4XRA_in' size='1' dtype='False' initialTokens='0'/>
+    </csdf>
+
+    <csdfProperties>
+    <actorProperties actor='n1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n11XDA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n11XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n11XInitVal'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='0'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n11XSpl'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XDA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XRA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XJnr_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='20'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XSpl_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x1_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x1_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x1_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x1_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x2_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x2_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x2_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x2_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x3_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x3_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x3_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x3_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x4_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x4_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x4_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x4_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x5_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x5_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x5_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x5_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XDA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XRA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XJnr_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='20'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XSpl_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x1_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x1_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x1_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x1_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x2_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x2_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x2_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x2_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x3_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x3_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x3_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x3_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x4_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x4_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x4_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x4_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x5_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x5_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x5_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x5_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XDA_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XRA_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XJnr_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='20'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XSpl_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x1_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x1_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x1_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x1_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x2_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x2_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x2_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x2_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x3_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x3_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x3_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x3_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x4_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x4_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x4_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x4_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x5_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x5_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x5_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x5_x2'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XDA_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XRA_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XJnr_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='20'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XSpl_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x1_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x1_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x1_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x1_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x2_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x2_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x2_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x2_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x3_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x3_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x3_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x3_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x4_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x4_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x4_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x4_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x5_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x5_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x5_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x5_x3'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n3_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n4_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XDA_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XRA_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XJnr_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='20'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n9XSpl_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1,1,1,1,1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x1_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x1_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x1_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x1_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x2_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x2_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x2_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x2_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x3_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x3_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x3_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x3_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x4_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x4_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x4_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x4_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n5_x5_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='10'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n7_x5_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n8_x5_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='2'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n6_x5_x4'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='40'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x0XDA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x0XDA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x0XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x0XZippee'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x1XDA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x1XDA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x1XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x1XZippee'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x2XDA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x2XDA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x2XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x2XZippee'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x3XDA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x3XDA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x3XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x3XZippee'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x4XDA_x0'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x4XDA_x1'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='6'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x4XRA'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='8'/>
+        </processor>
+    </actorProperties>
+    
+<actorProperties actor='n10_x4XZippee'>
+        <processor type='cluster_0' default='true'>
+            <executionTime time='1'/>
+        </processor>
+    </actorProperties>
+    
+    </csdfProperties>
+
+</applicationGraph>
+
+</sdf3>
+

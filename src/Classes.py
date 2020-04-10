@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 # In[2]:
 
 
@@ -240,6 +237,10 @@ class UserFun(CSDFNode):
 def getports(node):
     return (node.input if type(node.input) == list else [node.input]) + (node.output if type(node.output) == list else [node.output])
     
+    
+    
+    
+
 
 # In[3]:
 
@@ -298,6 +299,10 @@ class Unknown(TYPECLASS):
 # In[ ]:
 
 
+
+
+
+# In[1]:
 
 
 from HelperFuncs import *
