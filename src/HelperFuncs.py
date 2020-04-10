@@ -5,8 +5,6 @@
 
 
 import os, re, random
-
-
 # In[7]:
 
 
@@ -421,3 +419,4 @@ def batch_read_and_write(source_dir, target_dir):
 def get_sdf_from_hl(p):
     return get_sdf(smush_rede(rec_explode(unpack_program(p)["graph"])))
 
+from Classes import *

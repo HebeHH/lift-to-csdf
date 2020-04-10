@@ -4,9 +4,6 @@
 # In[1]:
 
 
-import HelperFuncs
-
-
 # In[2]:
 
 
@@ -243,10 +240,6 @@ class UserFun(CSDFNode):
 def getports(node):
     return (node.input if type(node.input) == list else [node.input]) + (node.output if type(node.output) == list else [node.output])
     
-    
-    
-    
-
 
 # In[3]:
 
@@ -306,4 +299,6 @@ class Unknown(TYPECLASS):
 
 
 
+
+from HelperFuncs import *
 

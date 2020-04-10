@@ -4,7 +4,7 @@
 # In[1]:
 
 
-import Classes
+from Classes import *
 import copy
 
 

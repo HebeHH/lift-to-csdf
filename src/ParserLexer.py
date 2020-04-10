@@ -4,7 +4,7 @@
 # In[28]:
 
 
-import Data
+from Data import *
 
 
 # In[36]:

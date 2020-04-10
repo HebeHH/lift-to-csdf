@@ -4,10 +4,12 @@
 # In[1]:
 
 
-import ParserLexer
-get_ipython().run_line_magic('matplotlib', 'inline')
-import matplotlib.pyplot as plt
-plt.style.use('seaborn-whitegrid')
+from ParserLexer import *
+import re
+
+# %matplotlib inline
+# import matplotlib.pyplot as plt
+# plt.style.use('seaborn-whitegrid')
 
 
 # In[2]:
@@ -38,8 +40,8 @@ def compose_maps(g, *kwargs):
                 new_c.add_dt(inc_c.datatype)
                 cs = [c for c in cs if c not in [inc_c, out_c, rd]] + [new_c]
                 ns = [n for n in ns if n not in [src, dst]]
-            else:
-                print(str(inc_c.datatype), str(out_c.datatype))
+#             else:
+#                 print(str(inc_c.datastype), str(out_c.datatype))
     g["nodes"] = ns
     g["channels"] = cs
     add_dt_to_channels_g(g)
@@ -165,9 +167,9 @@ def parallel_map(graph, explode_method, groupsize = 1):
         count = 0
         for i in range(routes):
             count += 1
-            print("Copying subgraph", i)
+#             print("Copying subgraph", i)
             sg = deepcopy(subgraph, count)
-            print('Copied subgraph', i)
+#             print('Copied subgraph', i)
             
             for n in externals:
 #                 print(n.name)
@@ -518,157 +520,8 @@ def try_do(filename, methods, sizevar_file = None):
         return(p)
     except Exception as e:
         print("\nCouldn't get CSDF for " + filename)
-        print(e)
+#        raise(e)
         return False
-
-
-# In[8]:
-
-
-recmethods = [discrete_zip, parallel_map, recursive_reduce]
-p = try_do("highLevel/mydotsmol", recmethods, [3] * 10)
-k = p['graph']
-
-
-# In[9]:
-
-
-printgraph_simple(k)
-add_dt_to_channels(p)
-
-
-# In[10]:
-
-
-[c.src_act for c in k['channels']]
-
-
-# In[42]:
-
-
-import timeit
-
-
-# parreducemethods = [parallel_reduce, recursive_map, recursive_reduce]
-# parmethods = [parallel_reduce, parallel_map, recursive_reduce]
-# naivemethods = [recursive_map, recursive_reduce]
-# parmapmethods = [parallel_map, recursive_reduce]
-# ls = range(1, 502, 50)
-# naive_ct = []
-# par_ct = []
-# for i in ls:
-#     print(i)
-#     x = %timeit -n100 -q -o try_do("highLevel/asum", naivemethods, [i])
-#     naive_ct.append(sum(x.all_runs)/x.loops/x.repeat)
-#     print(x.loops, x.repeat)
-#     x = %timeit -n100 -q -o try_do("highLevel/asum", parmapmethods, [i])
-#     par_ct.append(sum(x.all_runs)/x.loops/x.repeat)
-#     print(x.loops, x.repeat)
-
-
-# In[46]:
-
-
-x
-
-
-# In[53]:
-
-
-
-ff = {'family':'serif',
-      'sans-serif':['Adobe Arabic'],
-      'serif':['Times'],
-      'size': 14
-     }
-
-
-plt.rc('font', **ff)
-
-# fig1, ax1 = plt.subplots(figsize=(5,5))
-# ax1.pie(sizes, labels=labels, autopct='%1.1f%%',  startangle=90)
-# ax1.axis('equal') 
-
-# plt.title("CSDF Generation Success Rate", pad=20, 
-#           fontdict={'family':'sans-serif', 'size':18})
-# plt.savefig("Graphs/GenerationSuccessRatePie.png")
-
-plt.plot(ls, naive_ct, label='Default Map')
-plt.plot(ls, par_ct, label='Parallel Map')
-# plt.title('CSDF Generation time for asum')
-plt.ylabel('Compilation time (s)')
-plt.xlabel('Input array length')
-plt.title("CSDF Generation time for asum", pad=20, 
-          fontdict={'family':'sans-serif', 'size':18})
-plt.legend()
-plt.savefig("Graphs/AsumGenerationTime.png")
-plt.show()
-
-
-# In[44]:
-
-
-par_ct
-
-
-# In[39]:
-
-
-def tst5(k):
-    return k**k
-x = get_ipython().run_line_magic('timeit', ' -q -o tst5(9)')
-sum(x.all_runs)/x.loops/x.repeat
-
-
-# In[40]:
-
-
-print(sum(x.all_runs)/x.loops/x.repeat,x.best)
-x.all_runs, x.loops, x.repeat
-
-
-# In[ ]:
-
-
-# def test():
-#     write_csdf_from_hl(add_cwd("highLevel/mmNN"), add_cwd("csdf_xmls/mmNN"))
-    
-def testr():
-    return get_rec_csdf(add_cwd("highLevel/mmNN"))
-def testp():
-    return get_parallel_csdf(add_cwd("highLevel/mmNN"))
-
-
-# In[ ]:
-
-
-k = get_rec_csdf(add_cwd("highLevel/mydot"), [10,10,10,10,10])
-zz = k['graph']['nodes'][10]
-
-
-# In[ ]:
-
-
-print(zz.datatype)
-
-
-# In[ ]:
-
-
-with open('sfile.txt', 'w') as f:
-    f.write('\n'.join(['10']*5))
-
-
-# In[ ]:
-
-
-gr = testr()['graph']
-
-
-# In[ ]:
-
-
-gr
 
 
 # In[ ]:
